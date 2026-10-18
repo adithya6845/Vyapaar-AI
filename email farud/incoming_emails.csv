@@ -1,0 +1,936 @@
+EmailID,ReceivedAt,FromName,FromEmail,Subject,Body,AttachmentName,ClaimedSupplierID,ClaimedPO_ID,ClaimedInvoiceNo,ClaimedAmount,AccountInEmail,IFSCInEmail,UPIInEmail,Label,ScamType,ExpectedAction,ReplyTo,LinkInEmail,ExpectedFlags
+EML001,2025-07-01 16:26,Michael Dutta,accounts@takchand.com,Payment reminder - INV/25-26/1097,"Dear Sir/Madam,
+
+Gentle reminder: invoice INV/25-26/1097 for Rs 1,42,259.04 against PO PO0524 falls due this week. Kindly release payment to our account on record (65667010651, HDFC0333872). Ignore if already paid.
+
+Regards,
+Michael Dutta
+Tak, Chand and Batta",,SUP006,PO0524,INV/25-26/1097,142259.04,65667010651,HDFC0333872,,Legit,LEGIT_REMINDER,PASS,accounts@takchand.com,,
+EML002,2025-07-01 19:52,Shivani Lad - Sehgal-Dutt,shivani.lad@sehgaldutt.co.in,Invoice INV/25-26/7743 against PO0581,"Hello,
+
+Invoice INV/25-26/7743 against PO PO0581 is attached (Global Desi Palazzo Set x 140). Amount payable: Rs 4,85,298.80.
+Bank details as on your vendor record: A/c 940139904902, IFSC CNRB0787429.
+
+Thanks,
+Shivani Lad
+Sehgal-Dutt",Invoice_INV-25-26-7743.pdf,SUP026,PO0581,INV/25-26/7743,485298.8,940139904902,CNRB0787429,,Legit,LEGIT_INVOICE,PASS,shivani.lad@sehgaldutt.co.in,,
+EML003,2025-07-01 19:56,"Kala, Toor and Lanka",billing@kalat0or.co.in,OVERDUE: Invoice INV/25-26/5829,"Dear Sir,
+
+Invoice INV/25-26/5829 against PO PO0041 for Rs 3,63,686.14 is pending for 60 days. Kindly release payment immediately to avoid legal notice.
+Account name: Kala, Toor and Lanka
+Account no: 718133595616
+Bank: Kotak Mahindra Bank, IFSC: KKBK0420595
+
+Regards,
+Ikshita Biswas
+Kala, Toor and Lanka",Invoice_INV-25-26-5829.pdf,SUP016,PO0041,INV/25-26/5829,363686.14,718133595616,KKBK0420595,,Fraud,FAKE_INVOICE,HOLD,billing@kalat0or.co.in,,PO_SUPPLIER_MISMATCH;BANK_DETAILS_CHANGED;SENDER_DOMAIN_MISMATCH;KNOWN_BAD_INDICATOR
+EML004,2025-07-01 20:31,Raksha Datta,raksha.datta@gmail.com,Quick transfer needed,"Hi,
+
+I'm in a meeting and can't take calls. I need an urgent transfer of Rs 3,71,600.00 to a new vendor today. Details:
+Account name: Sri Vinayaka Enterprises
+Account no: 705349678274
+Bank: HDFC Bank, IFSC: HDFC0117674
+
+Do it now and send me the UTR. Please keep this between us until I'm back.
+
+Raksha Datta",,,,,371600.0,705349678274,HDFC0117674,,Fraud,INTERNAL_IMPERSONATION,HOLD,raksha.datta@gmail.com,,INTERNAL_IMPERSONATION;FREEMAIL_SENDER;URGENCY_LANGUAGE;SECRECY_REQUEST;NEW_BENEFICIARY
+EML005,2025-07-01 22:14,Azad Narayanan,azad.narayanan@bhargavatrading.in,Dispatch update - PO0767,"Dear Sir/Madam,
+
+Your order PO0767 (Kissan Tomato Ketchup 1kg (Pack of 3), 684 units) has been dispatched via VRL Logistics, LR no 812259572. Expected delivery in 3-4 days.
+
+Regards,
+Azad Narayanan
+Bhargava and Sons",,SUP010,PO0767,,,,,,Legit,LEGIT_DISPATCH,PASS,azad.narayanan@bhargavatrading.in,,
+EML006,2025-07-02 04:42,Janani Mohanty - Suresh-Bahl,accounts@sureshbahl.com,Invoice INV/25-26/9688 against PO0741,"Dear Sir/Madam,
+
+Please find attached invoice INV/25-26/9688 for 612 units of Parle-G Biscuits 400g (Pack of 2) supplied against your purchase order PO0741. Invoice value: Rs 4,28,234.76 (inclusive of GST). Payment terms as agreed.
+
+Our bank details remain unchanged:
+Account name: Suresh-Bahl
+Account no: 21913619399
+Bank: Kotak Mahindra Bank, IFSC: KKBK0091699
+
+Regards,
+Janani Mohanty
+Suresh-Bahl
+GSTIN: 36IGVWK3462V1ZJ",Invoice_INV-25-26-9688.pdf,SUP008,PO0741,INV/25-26/9688,428234.76,21913619399,KKBK0091699,,Legit,LEGIT_INVOICE,PASS,accounts@sureshbahl.com,,
+EML007,2025-07-02 08:05,GST Compliance Cell,noreply@gst-verify-portal.in,Final notice: GSTIN cancellation,"Dear Taxpayer,
+
+Your GST registration is under review due to mismatched returns and will be suspended within 24 hours. Pay the penalty of Rs 9,800.00 at the link below or by UPI to gstpenalty727@ybl to avoid cancellation.
+https://gst-verify-portal.in/pay?ref=29633472
+
+GST Compliance Cell",,,,,9800,,,gstpenalty727@ybl,Fraud,GST_KYC_PHISHING,HOLD,noreply@gst-verify-portal.in,https://gst-verify-portal.in/pay?ref=29633472,PHISHING_LINK;AUTHORITY_IMPERSONATION;URGENCY_LANGUAGE;SENDER_DOMAIN_MISMATCH;KNOWN_BAD_INDICATOR
+EML008,2025-07-02 09:55,Advika Jayaraman - Bumb Group,advika.jayaraman@burnbenterprises.in,Invoice INV/25-26/8972 against PO0162,"Dear Sir/Madam,
+
+Please find attached invoice INV/25-26/8972 for PO PO0162, amount Rs 4,15,257.60.
+Account name: Bumb Group
+Account no: 763201632870
+Bank: Canara Bank, IFSC: CNRB0831727
+
+Regards,
+Advika Jayaraman
+Bumb Group
+GSTIN: 36YOTXQ6872X1ZU",Invoice_INV-25-26-8972.pdf,SUP015,PO0162,INV/25-26/8972,415257.6,763201632870,CNRB0831727,,Fraud,LOOKALIKE_DOMAIN,HOLD,advika.jayaraman@burnbenterprises.in,,LOOKALIKE_DOMAIN;SENDER_DOMAIN_MISMATCH;KNOWN_BAD_INDICATOR
+EML009,2025-07-02 11:52,Chhabra Ltd,accounts@chhabratraders.net,Payment returned - resend INV/25-26/0354,"Dear Sir,
+
+Our records show invoice INV/25-26/0354 (Rs 2,08,869.92, PO PO0541) as unpaid. Your earlier transfer was returned by the bank. Please re-send to our new account:
+Account name: Chhabra Ltd
+Account no: 164871206021
+Bank: ICICI Bank, IFSC: ICIC0288665
+
+This is urgent - our accounts team has flagged the payment as overdue.
+
+Regards,
+Anita Manda
+Chhabra Ltd",Invoice_INV-25-26-0354.pdf.html,SUP017,PO0541,INV/25-26/0354,208869.92,164871206021,ICIC0288665,,Fraud,DUPLICATE_INVOICE,HOLD,accounts@chhabratraders.net,,PO_ALREADY_PAID;BANK_DETAILS_CHANGED;LOOKALIKE_DOMAIN;URGENCY_LANGUAGE;SUSPICIOUS_ATTACHMENT;KNOWN_BAD_INDICATOR
+EML010,2025-07-02 14:50,Advika Jayaraman - Bumb Group,advika.jayaraman@bumbenterprises.in,Invoice INV/25-26/1502 against PO0501,"Dear Team,
+
+Sharing our tax invoice INV/25-26/1502 dated 14 July for PO PO0501, total Rs 1,05,109.80. You may pay via NEFT/RTGS to the registered account ending 2870 or by UPI to bumbenterprises@cnrb as before.
+
+Regards,
+Advika Jayaraman
+Bumb Group
+GSTIN: 36YOTXQ6872X1ZU",Invoice_INV-25-26-1502.pdf,SUP015,PO0501,INV/25-26/1502,105109.8,,,bumbenterprises@cnrb,Legit,LEGIT_INVOICE,PASS,advika.jayaraman@bumbenterprises.in,,
+EML011,2025-07-02 18:12,Chanchal Ramakrishnan - Sood-Ahuja,chanchal.ramakrishnan@soodahuja.in,Invoice INV/25-26/5837 against PO0622,"Dear Sir/Madam,
+
+Please find attached invoice INV/25-26/5837 for 710 units of Organic Bananas 1kg (Pack of 2) supplied against your purchase order PO0622. Invoice value: Rs 3,49,234.80 (inclusive of GST). Payment terms as agreed.
+
+Our bank details remain unchanged:
+Account name: Sood-Ahuja
+Account no: 24808613171
+Bank: Kotak Mahindra Bank, IFSC: KKBK0274846
+
+Regards,
+Chanchal Ramakrishnan
+Sood-Ahuja
+GSTIN: 19PHORE6398X1Z8",Invoice_INV-25-26-5837.pdf,SUP028,PO0622,INV/25-26/5837,349234.8,24808613171,KKBK0274846,,Legit,LEGIT_INVOICE,PASS,chanchal.ramakrishnan@soodahuja.in,,
+EML012,2025-07-02 19:39,Meghana Shanker,meghana.shanker@murtysupply.in,Change of bank account - signed letter attached,"Dear Sir/Madam,
+
+We have moved our current account to Bank of Baroda following a merger of our group entities. A signed letter on our letterhead is attached. Invoice INV/25-26/5029 (Rs 1,85,390.06, PO PO0063) may be paid to:
+Account name: Murty and Sons
+Account no: 793110291813
+Bank: Bank of Baroda, IFSC: BARB0317087
+
+Please verify by calling our registered accounts number 8849696532 before updating your records.
+
+Regards,
+Meghana Shanker
+Murty and Sons
+GSTIN: 33IVPGR2997H1ZU",Bank_change_letter.pdf,SUP005,PO0063,INV/25-26/5029,185390.06,793110291813,BARB0317087,,Legit,LEGIT_BANK_CHANGE_VERIFIED,REVIEW,meghana.shanker@murtysupply.in,,BANK_DETAILS_CHANGED
+EML013,2025-07-03 10:17,Devika Rastogi,devika.rastogi@sampathkakar.co.in,Dispatch update - PO0146,"Dear Sir/Madam,
+
+Your order PO0146 (Van Heusen Blazer, 148 units) has been dispatched via VRL Logistics, LR no 100231177. Expected delivery in 3-4 days.
+
+Regards,
+Devika Rastogi
+Sampath, Kakar and Zacharia",,SUP009,PO0146,,,,,,Legit,LEGIT_DISPATCH,PASS,devika.rastogi@sampathkakar.co.in,,
+EML014,2025-07-03 16:59,Onveer Walla - Kadakia-Loke,accounts@kadakialoke.in,Invoice INV/25-26/0110 against PO0465,"Dear Sir/Madam,
+
+Please find attached invoice INV/25-26/0110 for 100 units of Biba Embroidered Kurti supplied against your purchase order PO0465. Invoice value: Rs 1,79,088.00 (inclusive of GST). Payment terms as agreed.
+
+Our bank details remain unchanged:
+Account name: Kadakia-Loke
+Account no: 701543039117
+Bank: Kotak Mahindra Bank, IFSC: KKBK0182278
+
+Regards,
+Onveer Walla
+Kadakia-Loke
+GSTIN: 07IQTNG8346V1ZN",Invoice_INV-25-26-0110.pdf,SUP004,PO0465,INV/25-26/0110,179088.0,701543039117,KKBK0182278,,Legit,LEGIT_INVOICE,PASS,accounts@kadakialoke.in,,
+EML015,2025-07-03 21:14,Sehgal-Dutt,accounts@accounts-sehgaldutt.co.in,Payment returned - resend INV/25-26/9759,"Dear Sir,
+
+Our records show invoice INV/25-26/9759 (Rs 3,64,919.07, PO PO0744) as unpaid. Your earlier transfer was returned by the bank. Please re-send to our new account:
+Account name: Sehgal-Dutt
+Account no: 812099576572
+Bank: Bank of Baroda, IFSC: BARB0894134
+
+This is urgent - our accounts team has flagged the payment as overdue.
+
+Regards,
+Shivani Lad
+Sehgal-Dutt",Invoice_INV-25-26-9759.pdf.html,SUP026,PO0744,INV/25-26/9759,364919.07,812099576572,BARB0894134,,Fraud,DUPLICATE_INVOICE,HOLD,accounts@accounts-sehgaldutt.co.in,,PO_ALREADY_PAID;BANK_DETAILS_CHANGED;LOOKALIKE_DOMAIN;URGENCY_LANGUAGE;SUSPICIOUS_ATTACHMENT
+EML016,2025-07-04 07:34,Farhan Memon,farhan.memon@sharafyadav.in,Price revision notice,"Dear Sir/Madam,
+
+Due to raw material costs, prices will increase by 8% effective next order. Revised rate card attached.
+
+Regards,
+Farhan Memon
+Sharaf, Yadav and Dash",Rate_card.pdf,SUP003,,,,,,,Legit,LEGIT_PRICE_NOTICE,PASS,farhan.memon@sharafyadav.in,,
+EML017,2025-07-04 22:42,Nidra Acharya - Raghavan-Ghosh,accounts@raghavanghosh.in,Invoice INV/25-26/5110 against PO0260,"Hello,
+
+Invoice INV/25-26/5110 against PO PO0260 is attached (Borosil Casserole Dish x 86). Amount payable: Rs 2,19,302.58.
+Bank details as on your vendor record: A/c 109477752047, IFSC BARB0116719.
+
+Thanks,
+Nidra Acharya
+Raghavan-Ghosh",Invoice_INV-25-26-5110.pdf,SUP023,PO0260,INV/25-26/5110,219302.58,109477752047,BARB0116719,,Legit,LEGIT_INVOICE,PASS,accounts@raghavanghosh.in,,
+EML018,2025-07-04 22:44,Madhavi Lanka - Gala Group,gala.accounts.acc@gmail.com,Urgent: Updated banking details,"Dear Sir,
+
+Kindly note we have changed our bank account with immediate effect following an internal audit. All pending payments including INV/25-26/5948 (Rs 5,71,117.68, PO PO0579) must be paid to the new account below. The old account is closed.
+Account name: Gala Group
+Account no: 374584384588
+Bank: Bank of Baroda, IFSC: BARB0105697
+
+Kindly confirm the transfer within 24 hours. For queries WhatsApp us on +91 90000 32834.
+
+Regards,
+Madhavi Lanka
+Gala Group",Invoice_INV-25-26-5948.pdf,SUP013,PO0579,INV/25-26/5948,571117.68,374584384588,BARB0105697,,Fraud,BANK_DETAILS_CHANGE,HOLD,gala.accounts.acc@gmail.com,,BANK_DETAILS_CHANGED;URGENCY_LANGUAGE;PHONE_NOT_ON_FILE;FREEMAIL_SENDER;SENDER_DOMAIN_MISMATCH
+EML019,2025-07-05 01:08,Ryan Sharma - Barad-Singhal,accounts@baradsinghal.in,Invoice INV/25-26/2380 against PO0030,"Dear Sir/Madam,
+
+Please find attached invoice INV/25-26/2380 for 632 units of Tomato 1kg (Pack of 3) supplied against your purchase order PO0030. Invoice value: Rs 1,21,407.20 (inclusive of GST). Payment terms as agreed.
+
+Our bank details remain unchanged:
+Account name: Barad-Singhal
+Account no: 262849877694
+Bank: Canara Bank, IFSC: CNRB0531473
+
+Regards,
+Ryan Sharma
+Barad-Singhal
+GSTIN: 19STVMK0752P1ZD",Invoice_INV-25-26-2380.pdf,SUP020,PO0030,INV/25-26/2380,121407.2,262849877694,CNRB0531473,,Legit,LEGIT_INVOICE,PASS,accounts@baradsinghal.in,,
+EML020,2025-07-05 03:57,Madhavi Lanka - Gala Group,madhavi.lanka@galatrading.com,Invoice INV/25-26/4380 against PO0459,"Dear Sir/Madam,
+
+Please find attached invoice INV/25-26/4380 for 83 units of Whirlpool Microwave 20L supplied against your purchase order PO0459. Invoice value: Rs 18,31,481.32 (inclusive of GST). Payment terms as agreed.
+
+Our bank details remain unchanged:
+Account name: Gala Group
+Account no: 60883561595148
+Bank: HDFC Bank, IFSC: HDFC0465648
+
+Regards,
+Madhavi Lanka
+Gala Group
+GSTIN: 07GNVMV2994M1ZZ",Invoice_INV-25-26-4380.pdf,SUP013,PO0459,INV/25-26/4380,1831481.32,60883561595148,HDFC0465648,,Legit,LEGIT_INVOICE,PASS,madhavi.lanka@galatrading.com,,
+EML021,2025-07-05 21:22,Rehaan Kalita,rehaan.kalita@darwason.in,Dispatch update - PO0183,"Dear Sir/Madam,
+
+Your order PO0183 (W Linen Dress, 83 units) has been dispatched via Delhivery, LR no 461767929. Expected delivery in 3-4 days.
+
+Regards,
+Rehaan Kalita
+Dar-Wason",,SUP036,PO0183,,,,,,Legit,LEGIT_DISPATCH,PASS,rehaan.kalita@darwason.in,,
+EML022,2025-07-06 01:36,Turvi Krish - Sami and Sons,turvi.krish@samisupply.com,Invoice INV/25-26/5815 against PO0712,"Dear Team,
+
+Sharing our tax invoice INV/25-26/5815 dated 14 July for PO PO0712, total Rs 2,83,259.79. You may pay via NEFT/RTGS to the registered account ending 4586 or by UPI to samisupply@sbi as before.
+
+Regards,
+Turvi Krish
+Sami and Sons
+GSTIN: 24BDTNL5698D1ZO",Invoice_INV-25-26-5815.pdf,SUP012,PO0712,INV/25-26/5815,283259.79,,,samisupply@sbi,Legit,LEGIT_INVOICE,PASS,turvi.krish@samisupply.com,,
+EML023,2025-07-06 03:56,Hardik Johal - Sanghvi-Mody,hardik.johal@sanghvimody.in,Invoice INV/25-26/6428 against PO0729,"Dear Sir/Madam,
+
+Please find attached invoice INV/25-26/6428 for 500 units of Organic Bananas 1kg (Pack of 2) supplied against your purchase order PO0729. Invoice value: Rs 2,49,630.00 (inclusive of GST). Payment terms as agreed.
+
+Our bank details remain unchanged:
+Account name: Sanghvi-Mody
+Account no: 15654527111161
+Bank: Axis Bank, IFSC: UTIB0528098
+
+Regards,
+Hardik Johal
+Sanghvi-Mody
+GSTIN: 36VDNLV6049J1ZM",Invoice_INV-25-26-6428.pdf,SUP039,PO0729,INV/25-26/6428,249630.0,15654527111161,UTIB0528098,,Legit,LEGIT_INVOICE,PASS,hardik.johal@sanghvimody.in,,
+EML024,2025-07-06 06:28,Ahluwalia Inc,accounts@ahluwaliatrading.net,Payment returned - resend INV/25-26/2152,"Dear Sir,
+
+Our records show invoice INV/25-26/2152 (Rs 3,66,734.55, PO PO0748) as unpaid. Your earlier transfer was returned by the bank. Please re-send to our new account:
+Account name: Ahluwalia Inc
+Account no: 369294455116
+Bank: Kotak Mahindra Bank, IFSC: KKBK0682973
+
+This is urgent - our accounts team has flagged the payment as overdue.
+
+Regards,
+Theodore Goda
+Ahluwalia Inc",Invoice_INV-25-26-2152.pdf.html,SUP025,PO0748,INV/25-26/2152,366734.55,369294455116,KKBK0682973,,Fraud,DUPLICATE_INVOICE,HOLD,accounts@ahluwaliatrading.net,,PO_ALREADY_PAID;BANK_DETAILS_CHANGED;LOOKALIKE_DOMAIN;URGENCY_LANGUAGE;SUSPICIOUS_ATTACHMENT;KNOWN_BAD_INDICATOR
+EML025,2025-07-06 06:45,"Devika Rastogi - Sampath, Kakar and Zacharia",devika.rastogi@sampathkakar.co.in,Invoice INV/25-26/7555 against PO0499,"Dear Sir/Madam,
+
+Please find attached invoice INV/25-26/7555 for 92 units of W Linen Dress supplied against your purchase order PO0499. Invoice value: Rs 4,24,118.16 (inclusive of GST). Payment terms as agreed.
+
+Our bank details remain unchanged:
+Account name: Sampath, Kakar and Zacharia
+Account no: 991183842513
+Bank: HDFC Bank, IFSC: HDFC0542784
+
+Regards,
+Devika Rastogi
+Sampath, Kakar and Zacharia
+GSTIN: 29VRJVD2411X1ZZ",Invoice_INV-25-26-7555.pdf,SUP009,PO0499,INV/25-26/7555,424118.16,991183842513,HDFC0542784,,Legit,LEGIT_INVOICE,PASS,devika.rastogi@sampathkakar.co.in,,
+EML026,2025-07-06 08:34,Upma Bahl - Sama-Krishnan,upma.bahl@outlook.com,New UPI ID for payments,"Hello,
+
+We have moved to a new UPI ID for faster settlement: samakrishnan27@paytm. Payments to the old ID have been failing. Please update and pay Rs 6,23,126.40 for PO PO0167 today.
+
+Upma Bahl
+Sama-Krishnan",,SUP030,PO0167,,623126.4,,,samakrishnan27@paytm,Fraud,UPI_CHANGE,HOLD,upma.bahl@outlook.com,,UPI_CHANGED;FREEMAIL_SENDER;SENDER_DOMAIN_MISMATCH;URGENCY_LANGUAGE
+EML027,2025-07-06 09:51,Farhan Memon,farhan.memon@sharafyadav.in,Dispatch update - PO0577,"Dear Sir/Madam,
+
+Your order PO0577 (Borosil Casserole Dish, 113 units) has been dispatched via Gati, LR no 842599599. Expected delivery in 3-4 days.
+
+Regards,
+Farhan Memon
+Sharaf, Yadav and Dash",,SUP003,PO0577,,,,,,Legit,LEGIT_DISPATCH,PASS,farhan.memon@sharafyadav.in,,
+EML028,2025-07-06 14:14,Sudiksha Bobal,sudiksha.bobal@katatrading.in,Payment reminder - INV/25-26/9000,"Dear Sir/Madam,
+
+Gentle reminder: invoice INV/25-26/9000 for Rs 1,54,191.36 against PO PO0206 falls due this week. Kindly release payment to our account on record (73158514936899, ICIC0809402). Ignore if already paid.
+
+Regards,
+Sudiksha Bobal
+Kata LLC",,SUP040,PO0206,INV/25-26/9000,154191.36,73158514936899,ICIC0809402,,Legit,LEGIT_REMINDER,PASS,sudiksha.bobal@katatrading.in,,
+EML029,2025-07-07 00:49,Sen PLC,billing@sentrading.co,OVERDUE: Invoice INV/25-26/5686,"Dear Sir,
+
+Invoice INV/25-26/5686 against PO PO9135 for Rs 6,75,144.75 is pending for 60 days. Kindly release payment immediately to avoid legal notice.
+Account name: Sen PLC
+Account no: 660186487699
+Bank: Kotak Mahindra Bank, IFSC: KKBK0842673
+
+Regards,
+Abeer Dutta
+Sen PLC",Invoice_INV-25-26-5686.pdf,SUP002,PO9135,INV/25-26/5686,675144.75,660186487699,KKBK0842673,,Fraud,FAKE_INVOICE,HOLD,billing@sentrading.co,,PO_NOT_FOUND;BANK_DETAILS_CHANGED;SENDER_DOMAIN_MISMATCH;KNOWN_BAD_INDICATOR
+EML030,2025-07-07 07:22,GST Compliance Cell,noreply@gov-gst-alerts.com,GST registration suspension notice - action required,"Dear Taxpayer,
+
+Your GST registration is under review due to mismatched returns and will be suspended within 24 hours. Pay the penalty of Rs 38,000.00 at the link below or by UPI to gstpenalty536@ybl to avoid cancellation.
+https://gov-gst-alerts.com/pay?ref=74131467
+
+GST Compliance Cell",,,,,38000,,,gstpenalty536@ybl,Fraud,GST_KYC_PHISHING,HOLD,noreply@gov-gst-alerts.com,https://gov-gst-alerts.com/pay?ref=74131467,PHISHING_LINK;AUTHORITY_IMPERSONATION;URGENCY_LANGUAGE;SENDER_DOMAIN_MISMATCH;KNOWN_BAD_INDICATOR
+EML031,2025-07-07 07:52,Leela Dua - Devi and Sons,devi.accounts123@outlook.com,Important: new remittance instructions,"Dear Sir,
+
+Kindly note we have changed our bank account with immediate effect following an internal audit. All pending payments including INV/25-26/8885 (Rs 54,106.41, PO PO0717) must be paid to the new account below. The old account is closed.
+Account name: Devi and Sons
+Account no: 003010272405
+Bank: Kotak Mahindra Bank, IFSC: KKBK0593429
+
+Please process today to avoid supply interruption and a late fee of 2% per month. For queries WhatsApp us on +91 90000 11148.
+
+Regards,
+Leela Dua
+Devi and Sons",Invoice_INV-25-26-8885.pdf,SUP027,PO0717,INV/25-26/8885,54106.41,003010272405,KKBK0593429,,Fraud,BANK_DETAILS_CHANGE,HOLD,devi.accounts123@outlook.com,,BANK_DETAILS_CHANGED;URGENCY_LANGUAGE;PHONE_NOT_ON_FILE;FREEMAIL_SENDER;SENDER_DOMAIN_MISMATCH;KNOWN_BAD_INDICATOR
+EML032,2025-07-07 11:32,Avi Ramesh,avi.ramesh@ravelgandhi.com,Dispatch update - PO0370,"Dear Sir/Madam,
+
+Your order PO0370 (Prestige Chopper, 87 units) has been dispatched via Delhivery, LR no 101759025. Expected delivery in 3-4 days.
+
+Regards,
+Avi Ramesh
+Ravel, Gandhi and Sibal",,SUP029,PO0370,,,,,,Legit,LEGIT_DISPATCH,PASS,avi.ramesh@ravelgandhi.com,,
+EML033,2025-07-07 19:36,Abeer Dutta - Sen PLC,accounts@sentrading.in,Invoice INV/25-26/0553 against PO0755,"Dear Sir/Madam,
+
+Please find attached invoice INV/25-26/0553 for 676 units of Aashirvaad Atta 5kg (Pack of 2) supplied against your purchase order PO0755. Invoice value: Rs 3,77,458.12 (inclusive of GST). Payment terms as agreed.
+
+Our bank details remain unchanged:
+Account name: Sen PLC
+Account no: 39537672423
+Bank: State Bank of India, IFSC: SBIN0884969
+
+Regards,
+Abeer Dutta
+Sen PLC
+GSTIN: 09LHEQP1012U1ZA",Invoice_INV-25-26-0553.pdf,SUP002,PO0755,INV/25-26/0553,377458.12,39537672423,SBIN0884969,,Legit,LEGIT_INVOICE,PASS,accounts@sentrading.in,,
+EML034,2025-07-07 23:28,Onveer Walla,onveer.walla@kadakialoke.in,Quotation for next quarter,"Dear Sir/Madam,
+
+As discussed, our quotation for Organic Bananas 1kg (Pack of 2) is attached. Valid for 15 days. Happy to arrange a call.
+
+Regards,
+Onveer Walla
+Kadakia-Loke",Quotation.pdf,SUP004,,,,,,,Legit,LEGIT_QUOTE,PASS,onveer.walla@kadakialoke.in,,
+EML035,2025-07-08 05:38,Irya Sampath,accounts@chandratrading.in,Payment reminder - INV/25-26/0990,"Dear Sir/Madam,
+
+Gentle reminder: invoice INV/25-26/0990 for Rs 3,04,982.28 against PO PO0780 falls due this week. Kindly release payment to our account on record (505331586923, HDFC0226025). Ignore if already paid.
+
+Regards,
+Irya Sampath
+Chandra Inc",,SUP011,PO0780,INV/25-26/0990,304982.28,505331586923,HDFC0226025,,Legit,LEGIT_REMINDER,PASS,accounts@chandratrading.in,,
+EML036,2025-07-08 09:29,Chatura Master,chatura.master@walladate.com,Price revision notice,"Dear Sir/Madam,
+
+Due to raw material costs, prices will increase by 8% effective next order. Revised rate card attached.
+
+Regards,
+Chatura Master
+Walla, Date and Mahal",Rate_card.pdf,SUP037,,,,,,,Legit,LEGIT_PRICE_NOTICE,PASS,chatura.master@walladate.com,,
+EML037,2025-07-08 14:27,Yadavi Wali,yadavi.wali@murthybhandari.in,Payment reminder - INV/25-26/9364,"Dear Sir/Madam,
+
+Gentle reminder: invoice INV/25-26/9364 for Rs 1,58,030.56 against PO PO0390 falls due this week. Kindly release payment to our account on record (995777387214, ICIC0895134). Ignore if already paid.
+
+Regards,
+Yadavi Wali
+Murthy, Bhandari and Bedi",,SUP014,PO0390,INV/25-26/9364,158030.56,995777387214,ICIC0895134,,Legit,LEGIT_REMINDER,PASS,yadavi.wali@murthybhandari.in,,
+EML038,2025-07-08 17:30,Irya Sampath - Chandra Inc,accounts@chandratrading.in,Invoice INV/25-26/6920 against PO0033,"Hello,
+
+Invoice INV/25-26/6920 against PO PO0033 is attached (Wonderchef Tawa 28cm x 102). Amount payable: Rs 28,656.90.
+Bank details as on your vendor record: A/c 505331586923, IFSC HDFC0226025.
+
+Thanks,
+Irya Sampath
+Chandra Inc",Invoice_INV-25-26-6920.pdf,SUP011,PO0033,INV/25-26/6920,28656.9,505331586923,HDFC0226025,,Legit,LEGIT_INVOICE,PASS,accounts@chandratrading.in,,
+EML039,2025-07-08 21:03,Amrita Naidu,amrita.naidu@yohannansule.com,Payment reminder - INV/25-26/0197,"Dear Sir/Madam,
+
+Gentle reminder: invoice INV/25-26/0197 for Rs 91,452.24 against PO PO0307 falls due this week. Kindly release payment to our account on record (95339421047, BARB0095214). Ignore if already paid.
+
+Regards,
+Amrita Naidu
+Yohannan, Sule and Shroff",,SUP033,PO0307,INV/25-26/0197,91452.24,95339421047,BARB0095214,,Legit,LEGIT_REMINDER,PASS,amrita.naidu@yohannansule.com,,
+EML040,2025-07-08 22:02,"Michael Dutta - Tak, Chand and Batta",michael.dutta@takchand.co,Invoice INV/25-26/5099 against PO0639,"Dear Sir/Madam,
+
+Please find attached invoice INV/25-26/5099 for PO PO0639, amount Rs 2,06,015.45.
+Account name: Tak, Chand and Batta
+Account no: 65667010651
+Bank: HDFC Bank, IFSC: HDFC0333872
+
+Regards,
+Michael Dutta
+Tak, Chand and Batta
+GSTIN: 09FIOHC7810U1ZY",Invoice_INV-25-26-5099.pdf,SUP006,PO0639,INV/25-26/5099,206015.45,65667010651,HDFC0333872,,Fraud,LOOKALIKE_DOMAIN,HOLD,michael.dutta@takchand.co,,LOOKALIKE_DOMAIN;SENDER_DOMAIN_MISMATCH
+EML041,2025-07-08 23:01,Rehaan Kalita - Dar-Wason,accounts@darwas0n.in,Change of bank account - please update,"Dear Sir,
+
+Kindly note we have changed our bank account with immediate effect following an internal audit. All pending payments including INV/25-26/4055 (Rs 63,145.17, PO PO0279) must be paid to the new account below. The old account is closed.
+Account name: Dar-Wason
+Account no: 898469081974
+Bank: Bank of Baroda, IFSC: BARB0005643
+
+Kindly confirm the transfer within 24 hours. For queries WhatsApp us on +91 90000 02385.
+
+Regards,
+Rehaan Kalita
+Dar-Wason",Invoice_INV-25-26-4055.pdf,SUP036,PO0279,INV/25-26/4055,63145.17,898469081974,BARB0005643,,Fraud,BANK_DETAILS_CHANGE,HOLD,payments.desk@gmail.com,,BANK_DETAILS_CHANGED;URGENCY_LANGUAGE;PHONE_NOT_ON_FILE;LOOKALIKE_DOMAIN
+EML042,2025-07-09 02:35,"Ikshita Biswas - Kala, Toor and Lanka",ikshita.biswas.acc@outlook.com,New UPI ID for payments,"Hello,
+
+We have moved to a new UPI ID for faster settlement: kalatoor63@ybl. Payments to the old ID have been failing. Please update and pay Rs 3,47,425.80 for PO PO0065 today.
+
+Ikshita Biswas
+Kala, Toor and Lanka",,SUP016,PO0065,,347425.8,,,kalatoor63@ybl,Fraud,UPI_CHANGE,HOLD,ikshita.biswas.acc@outlook.com,,UPI_CHANGED;FREEMAIL_SENDER;SENDER_DOMAIN_MISMATCH;URGENCY_LANGUAGE;KNOWN_BAD_INDICATOR
+EML043,2025-07-09 09:37,Rehaan Kalita - Dar-Wason,rehaan.kalita@darwason.biz,Invoice INV/25-26/4401 against PO0355,"Dear Sir/Madam,
+
+Please find attached invoice INV/25-26/4401 for PO PO0355, amount Rs 85,771.70.
+Account name: Dar-Wason
+Account no: 58506431713900
+Bank: HDFC Bank, IFSC: HDFC0532931
+
+Regards,
+Rehaan Kalita
+Dar-Wason
+GSTIN: 33SGHKY2904E1Z8",Invoice_INV-25-26-4401.pdf,SUP036,PO0355,INV/25-26/4401,85771.7,58506431713900,HDFC0532931,,Fraud,LOOKALIKE_DOMAIN,HOLD,rehaan.kalita@darwason.biz,,LOOKALIKE_DOMAIN;SENDER_DOMAIN_MISMATCH;KNOWN_BAD_INDICATOR
+EML044,2025-07-09 14:45,Amrita Naidu,amrita.naidu@yohannansule.com,Quotation for next quarter,"Dear Sir/Madam,
+
+As discussed, our quotation for W Linen Dress is attached. Valid for 15 days. Happy to arrange a call.
+
+Regards,
+Amrita Naidu
+Yohannan, Sule and Shroff",Quotation.pdf,SUP033,,,,,,,Legit,LEGIT_QUOTE,PASS,amrita.naidu@yohannansule.com,,
+EML045,2025-07-09 21:11,Hardik Johal,hardik.johal@sanghvimody.in,Change of bank account - signed letter attached,"Dear Sir/Madam,
+
+We have moved our current account to State Bank of India following a merger of our group entities. A signed letter on our letterhead is attached. Invoice INV/25-26/6501 (Rs 1,13,490.98, PO PO0590) may be paid to:
+Account name: Sanghvi-Mody
+Account no: 672384979162
+Bank: State Bank of India, IFSC: SBIN0022328
+
+Please verify by calling our registered accounts number 912812067974 before updating your records.
+
+Regards,
+Hardik Johal
+Sanghvi-Mody
+GSTIN: 36VDNLV6049J1ZM",Bank_change_letter.pdf,SUP039,PO0590,INV/25-26/6501,113490.98,672384979162,SBIN0022328,,Legit,LEGIT_BANK_CHANGE_VERIFIED,REVIEW,hardik.johal@sanghvimody.in,,BANK_DETAILS_CHANGED
+EML046,2025-07-10 00:05,Nidra Acharya - Raghavan-Ghosh,accounts@raghavanghosh.in,Invoice INV/25-26/4736 against PO0716,"Hello,
+
+Invoice INV/25-26/4736 against PO PO0716 is attached (Fresh Paneer 200g (Pack of 3) x 546). Amount payable: Rs 1,47,911.40.
+Bank details as on your vendor record: A/c 109477752047, IFSC BARB0116719.
+
+Thanks,
+Nidra Acharya
+Raghavan-Ghosh",Invoice_INV-25-26-4736.pdf,SUP023,PO0716,INV/25-26/4736,147911.4,109477752047,BARB0116719,,Legit,LEGIT_INVOICE,PASS,accounts@raghavanghosh.in,,
+EML047,2025-07-10 06:44,Sama-Krishnan,billing@samakrishnan-accounts.in,OVERDUE: Invoice INV/25-26/0382,"Dear Sir,
+
+Invoice INV/25-26/0382 against PO PO9265 for Rs 4,40,725.61 is pending for 60 days. Kindly release payment immediately to avoid legal notice.
+Account name: Sama-Krishnan
+Account no: 057836091498
+Bank: Axis Bank, IFSC: UTIB0517244
+
+Regards,
+Upma Bahl
+Sama-Krishnan",Invoice_INV-25-26-0382.pdf,SUP030,PO9265,INV/25-26/0382,440725.61,057836091498,UTIB0517244,,Fraud,FAKE_INVOICE,HOLD,billing@samakrishnan-accounts.in,,PO_NOT_FOUND;BANK_DETAILS_CHANGED;SENDER_DOMAIN_MISMATCH
+EML048,2025-07-10 09:00,GST Compliance Cell,noreply@gov-gst-alerts.com,Final notice: GSTIN cancellation,"Dear Taxpayer,
+
+Your GST registration is under review due to mismatched returns and will be suspended within 24 hours. Pay the penalty of Rs 38,000.00 at the link below or by UPI to gstpenalty347@ybl to avoid cancellation.
+https://gov-gst-alerts.com/pay?ref=69357824
+
+GST Compliance Cell",,,,,38000,,,gstpenalty347@ybl,Fraud,GST_KYC_PHISHING,HOLD,noreply@gov-gst-alerts.com,https://gov-gst-alerts.com/pay?ref=69357824,PHISHING_LINK;AUTHORITY_IMPERSONATION;URGENCY_LANGUAGE;SENDER_DOMAIN_MISMATCH;KNOWN_BAD_INDICATOR
+EML049,2025-07-10 10:19,"Jyoti Ganesh - Contractor, Kamdar and Shroff",jyoti.ganesh@contractorkamdar.in,Invoice INV/25-26/2403 against PO0221,"Dear Team,
+
+Sharing our tax invoice INV/25-26/2403 dated 9 July for PO PO0221, total Rs 31,095.22. You may pay via NEFT/RTGS to the registered account ending 5623 or by UPI to contractorkamdar@hdfcbank as before.
+
+Regards,
+Jyoti Ganesh
+Contractor, Kamdar and Shroff
+GSTIN: 27TMTVH7923O1ZG",Invoice_INV-25-26-2403.pdf,SUP031,PO0221,INV/25-26/2403,31095.22,,,contractorkamdar@hdfcbank,Legit,LEGIT_INVOICE,PASS,jyoti.ganesh@contractorkamdar.in,,
+EML050,2025-07-10 10:43,Sudiksha Bobal,accounts@katatrading.in,Revised invoice INV/25-26/0634,"Dear Sir/Madam,
+
+Revised invoice INV/25-26/0634 for PO PO0233: Rs 6,01,327.52 (freight and fuel surcharge added). Please pay to:
+Account name: Kata LLC
+Account no: 113989868180
+Bank: Axis Bank, IFSC: UTIB0978875
+
+Regards,
+Sudiksha Bobal
+Kata LLC
+GSTIN: 24WYJKL0229V1ZP",Invoice_INV-25-26-0634.pdf,SUP040,PO0233,INV/25-26/0634,601327.52,113989868180,UTIB0978875,,Fraud,AMOUNT_MISMATCH,HOLD,accounts@katatrading.in,,AMOUNT_MISMATCH_PO;BANK_DETAILS_CHANGED
+EML051,2025-07-10 16:22,Leela Dua - Devi and Sons,leela.dua@devitrading.in,Invoice INV/25-26/8491 against PO0203,"Dear Team,
+
+Sharing our tax invoice INV/25-26/8491 dated 9 July for PO PO0203, total Rs 84,618.52. You may pay via NEFT/RTGS to the registered account ending 6808 or by UPI to devitrading@cnrb as before.
+
+Regards,
+Leela Dua
+Devi and Sons
+GSTIN: 19UOYBG4824O1ZV",Invoice_INV-25-26-8491.pdf,SUP027,PO0203,INV/25-26/8491,84618.52,,,devitrading@cnrb,Legit,LEGIT_INVOICE,PASS,leela.dua@devitrading.in,,
+EML052,2025-07-10 16:48,Chatresh Doshi,accounts@rattantraders.com,Payment reminder - INV/25-26/6533,"Dear Sir/Madam,
+
+Gentle reminder: invoice INV/25-26/6533 for Rs 8,17,667.00 against PO PO0578 falls due this week. Kindly release payment to our account on record (711592124998, HDFC0569847). Ignore if already paid.
+
+Regards,
+Chatresh Doshi
+Rattan Group",,SUP038,PO0578,INV/25-26/6533,817667.0,711592124998,HDFC0569847,,Legit,LEGIT_REMINDER,PASS,accounts@rattantraders.com,,
+EML053,2025-07-10 17:35,Aarush Lall - Saran-Dugar,aarush.lall@sarandugar.in,Invoice INV/25-26/0626 against PO0478,"Dear Sir/Madam,
+
+Please find attached invoice INV/25-26/0626 for 674 units of Fresh Paneer 200g (Pack of 1) supplied against your purchase order PO0478. Invoice value: Rs 42,866.40 (inclusive of GST). Payment terms as agreed.
+
+Our bank details remain unchanged:
+Account name: Saran-Dugar
+Account no: 773602606474
+Bank: ICICI Bank, IFSC: ICIC0687234
+
+Regards,
+Aarush Lall
+Saran-Dugar
+GSTIN: 33BSXRB5009P1ZW",Invoice_INV-25-26-0626.pdf,SUP007,PO0478,INV/25-26/0626,42866.4,773602606474,ICIC0687234,,Legit,LEGIT_INVOICE,PASS,aarush.lall@sarandugar.in,,
+EML054,2025-07-10 18:46,Umang Issac,accounts@nayakchander.in,Revised invoice INV/25-26/4510,"Dear Sir/Madam,
+
+Revised invoice INV/25-26/4510 for PO PO0576: Rs 3,60,467.98 (freight and fuel surcharge added). Please pay to:
+Account name: Nayak, Chander and Keer
+Account no: 435353751376
+Bank: Kotak Mahindra Bank, IFSC: KKBK0515881
+
+Regards,
+Umang Issac
+Nayak, Chander and Keer
+GSTIN: 27FANOW9740H1ZI",Invoice_INV-25-26-4510.pdf,SUP024,PO0576,INV/25-26/4510,360467.98,435353751376,KKBK0515881,,Fraud,AMOUNT_MISMATCH,HOLD,accounts@nayakchander.in,,AMOUNT_MISMATCH_PO;BANK_DETAILS_CHANGED
+EML055,2025-07-11 01:12,"Priya Prabhakar - Mitra, Dara and Barman",priya.prabhakar@mitradara.co.in,Invoice INV/25-26/9027 against PO0347,"Hello,
+
+Invoice INV/25-26/9027 against PO PO0347 is attached (Organic Bananas 1kg (Pack of 1) x 849). Amount payable: Rs 2,50,981.38.
+Bank details as on your vendor record: A/c 482175946474, IFSC HDFC0367136.
+
+Thanks,
+Priya Prabhakar
+Mitra, Dara and Barman",Invoice_INV-25-26-9027.pdf,SUP032,PO0347,INV/25-26/9027,250981.38,482175946474,HDFC0367136,,Legit,LEGIT_INVOICE,PASS,priya.prabhakar@mitradara.co.in,,
+EML056,2025-07-11 10:21,Devika Rastogi,accounts@sampathkakar.co.in,Revised invoice INV/25-26/6962,"Dear Sir/Madam,
+
+Revised invoice INV/25-26/6962 for PO PO0151: Rs 50,67,382.36 (freight and fuel surcharge added). Please pay to:
+Account name: Sampath, Kakar and Zacharia
+Account no: 991183842513
+Bank: HDFC Bank, IFSC: HDFC0542784
+
+Regards,
+Devika Rastogi
+Sampath, Kakar and Zacharia
+GSTIN: 29VRJVD2411X1ZZ",Invoice_INV-25-26-6962.pdf,SUP009,PO0151,INV/25-26/6962,5067382.36,991183842513,HDFC0542784,,Fraud,AMOUNT_MISMATCH,REVIEW,accounts@sampathkakar.co.in,,AMOUNT_MISMATCH_PO
+EML057,2025-07-11 13:28,"Sampath, Kakar and Zacharia",sampath.billing@yahoo.com,OVERDUE: Invoice INV/25-26/3826,"Dear Sir,
+
+Invoice INV/25-26/3826 against PO PO0041 for Rs 3,63,686.14 is pending for 60 days. Kindly release payment immediately to avoid legal notice.
+Account name: Sampath, Kakar and Zacharia
+Account no: 903102879508
+Bank: ICICI Bank, IFSC: ICIC0304405
+
+Regards,
+Devika Rastogi
+Sampath, Kakar and Zacharia",Invoice_INV-25-26-3826.pdf,SUP009,PO0041,INV/25-26/3826,363686.14,903102879508,ICIC0304405,,Fraud,FAKE_INVOICE,HOLD,sampath.billing@yahoo.com,,PO_SUPPLIER_MISMATCH;BANK_DETAILS_CHANGED;SENDER_DOMAIN_MISMATCH;KNOWN_BAD_INDICATOR
+EML058,2025-07-12 09:49,"Tak, Chand and Batta",accounts@takchand-payments.com,Payment returned - resend INV/25-26/9224,"Dear Sir,
+
+Our records show invoice INV/25-26/9224 (Rs 4,64,525.60, PO PO0750) as unpaid. Your earlier transfer was returned by the bank. Please re-send to our new account:
+Account name: Tak, Chand and Batta
+Account no: 415599910157
+Bank: ICICI Bank, IFSC: ICIC0676472
+
+Please process today to avoid supply interruption and a late fee of 2% per month.
+
+Regards,
+Michael Dutta
+Tak, Chand and Batta",Invoice_INV-25-26-9224.pdf.html,SUP006,PO0750,INV/25-26/9224,464525.6,415599910157,ICIC0676472,,Fraud,DUPLICATE_INVOICE,HOLD,accounts@takchand-payments.com,,PO_ALREADY_PAID;BANK_DETAILS_CHANGED;LOOKALIKE_DOMAIN;URGENCY_LANGUAGE;SUSPICIOUS_ATTACHMENT
+EML059,2025-07-12 10:09,Onveer Walla - Kadakia-Loke,onveer.walla@kadakialoke.in,Invoice INV/25-26/6936 against PO0360,"Dear Sir/Madam,
+
+Please find attached invoice INV/25-26/6936 for 107 units of Meyer Glass Storage Set supplied against your purchase order PO0360. Invoice value: Rs 4,54,724.32 (inclusive of GST). Payment terms as agreed.
+
+Our bank details remain unchanged:
+Account name: Kadakia-Loke
+Account no: 701543039117
+Bank: Kotak Mahindra Bank, IFSC: KKBK0182278
+
+Regards,
+Onveer Walla
+Kadakia-Loke
+GSTIN: 07IQTNG8346V1ZN",Invoice_INV-25-26-6936.pdf,SUP004,PO0360,INV/25-26/6936,454724.32,701543039117,KKBK0182278,,Legit,LEGIT_INVOICE,PASS,onveer.walla@kadakialoke.in,,
+EML060,2025-07-12 18:53,Priya Prabhakar,accounts@mitradara.co.in,Payment reminder - INV/25-26/9837,"Dear Sir/Madam,
+
+Gentle reminder: invoice INV/25-26/9837 for Rs 1,84,077.11 against PO PO0184 falls due this week. Kindly release payment to our account on record (482175946474, HDFC0367136). Ignore if already paid.
+
+Regards,
+Priya Prabhakar
+Mitra, Dara and Barman",,SUP032,PO0184,INV/25-26/9837,184077.11,482175946474,HDFC0367136,,Legit,LEGIT_REMINDER,PASS,accounts@mitradara.co.in,,
+EML061,2025-07-12 22:09,Warinder Narasimhan,warinder.narasimhan@yahoo.com,Are you available?,"Hi,
+
+I'm in a meeting and can't take calls. I need an urgent transfer of Rs 1,24,600.00 to a new vendor today. Details:
+Account name: Sri Vinayaka Enterprises
+Account no: 477324491342
+Bank: State Bank of India, IFSC: SBIN0138820
+
+Do it now and send me the UTR. Please keep this between us until I'm back.
+
+Warinder Narasimhan",,,,,124600.0,477324491342,SBIN0138820,,Fraud,INTERNAL_IMPERSONATION,HOLD,warinder.narasimhan@yahoo.com,,INTERNAL_IMPERSONATION;FREEMAIL_SENDER;URGENCY_LANGUAGE;SECRECY_REQUEST;NEW_BENEFICIARY;KNOWN_BAD_INDICATOR
+EML062,2025-07-13 04:15,Chatresh Doshi - Rattan Group,chatresh.doshi@rattantraders.com,Invoice INV/25-26/0355 against PO0522,"Dear Sir/Madam,
+
+Please find attached invoice INV/25-26/0355 for 96 units of Prestige Pressure Cooker 5L supplied against your purchase order PO0522. Invoice value: Rs 4,53,289.92 (inclusive of GST). Payment terms as agreed.
+
+Our bank details remain unchanged:
+Account name: Rattan Group
+Account no: 711592124998
+Bank: HDFC Bank, IFSC: HDFC0569847
+
+Regards,
+Chatresh Doshi
+Rattan Group
+GSTIN: 09DZWDU8367H1ZQ",Invoice_INV-25-26-0355.pdf,SUP038,PO0522,INV/25-26/0355,453289.92,711592124998,HDFC0569847,,Legit,LEGIT_INVOICE,PASS,chatresh.doshi@rattantraders.com,,
+EML063,2025-07-13 08:34,Farhan Memon,farhan.memon@sharafyadav.in,Price revision notice,"Dear Sir/Madam,
+
+Due to raw material costs, prices will increase by 6% effective next order. Revised rate card attached.
+
+Regards,
+Farhan Memon
+Sharaf, Yadav and Dash",Rate_card.pdf,SUP003,,,,,,,Legit,LEGIT_PRICE_NOTICE,PASS,farhan.memon@sharafyadav.in,,
+EML064,2025-07-13 13:26,"Ikshita Biswas - Kala, Toor and Lanka",ikshita.biswas@kalatoor.co.in,Invoice INV/25-26/0773 against PO0702,"Hello,
+
+Invoice INV/25-26/0773 against PO PO0702 is attached (Louis Philippe Chinos x 156). Amount payable: Rs 1,28,456.64.
+Bank details as on your vendor record: A/c 48734714345581, IFSC BARB0223623.
+
+Thanks,
+Ikshita Biswas
+Kala, Toor and Lanka",Invoice_INV-25-26-0773.pdf,SUP016,PO0702,INV/25-26/0773,128456.64,48734714345581,BARB0223623,,Legit,LEGIT_INVOICE,PASS,ikshita.biswas@kalatoor.co.in,,
+EML065,2025-07-13 13:33,Accounts - Bumb Group,accounts@bumbenterprises.in,Statement of account,"Dear Sir/Madam,
+
+Statement of account as on 15 July: outstanding Rs 6,34,357.08 against PO PO0335 (invoice INV/25-26/3459). No change in our banking details.
+
+Regards,
+Advika Jayaraman
+Bumb Group",Statement_July.pdf,SUP015,PO0335,INV/25-26/3459,634357.08,,,,Legit,LEGIT_STATEMENT,PASS,accounts@bumbenterprises.in,,
+EML066,2025-07-13 13:44,Hiral Bawa,hiral.bawa@outlook.com,Quick transfer needed,"Hi,
+
+I'm in a meeting and can't take calls. I need an urgent transfer of Rs 78,800.00 to a new vendor today. Details:
+Account name: Sri Vinayaka Enterprises
+Account no: 898645652203
+Bank: Kotak Mahindra Bank, IFSC: KKBK0684995
+
+Do it now and send me the UTR. Please keep this between us until I'm back.
+
+Hiral Bawa",,,,,78800.0,898645652203,KKBK0684995,,Fraud,INTERNAL_IMPERSONATION,HOLD,hiral.bawa@outlook.com,,INTERNAL_IMPERSONATION;FREEMAIL_SENDER;URGENCY_LANGUAGE;SECRECY_REQUEST;NEW_BENEFICIARY;KNOWN_BAD_INDICATOR
+EML067,2025-07-13 15:47,Janani Mohanty,accounts@sureshbahl.com,Payment reminder - INV/25-26/4526,"Dear Sir/Madam,
+
+Gentle reminder: invoice INV/25-26/4526 for Rs 4,71,334.30 against PO PO0062 falls due this week. Kindly release payment to our account on record (21913619399, KKBK0091699). Ignore if already paid.
+
+Regards,
+Janani Mohanty
+Suresh-Bahl",,SUP008,PO0062,INV/25-26/4526,471334.3,21913619399,KKBK0091699,,Legit,LEGIT_REMINDER,PASS,accounts@sureshbahl.com,,
+EML068,2025-07-13 22:57,"Januja Sankar - Sarin, Agarwal and Venkatesh",accounts@sarlnagarwal.in,Change of bank account - please update,"Dear Sir,
+
+Kindly note we have changed our bank account with immediate effect following an internal audit. All pending payments including INV/25-26/6315 (Rs 2,37,478.77, PO PO0416) must be paid to the new account below. The old account is closed.
+Account name: Sarin, Agarwal and Venkatesh
+Account no: 087066266821
+Bank: Canara Bank, IFSC: CNRB0719553
+
+Kindly confirm the transfer within 24 hours. For queries WhatsApp us on +91 90000 60331.
+
+Regards,
+Januja Sankar
+Sarin, Agarwal and Venkatesh",Invoice_INV-25-26-6315.pdf,SUP022,PO0416,INV/25-26/6315,237478.77,087066266821,CNRB0719553,,Fraud,BANK_DETAILS_CHANGE,HOLD,accounts@sarlnagarwal.in,,BANK_DETAILS_CHANGED;URGENCY_LANGUAGE;PHONE_NOT_ON_FILE;LOOKALIKE_DOMAIN
+EML069,2025-07-13 22:59,"Ikshita Biswas - Kala, Toor and Lanka",accounts@kalatoor.biz,Important: new remittance instructions,"Dear Sir,
+
+Kindly note we have changed our bank account with immediate effect following an internal audit. All pending payments including INV/25-26/2358 (Rs 3,04,512.57, PO PO0177) must be paid to the new account below. The old account is closed.
+Account name: Kala, Toor and Lanka
+Account no: 766191284117
+Bank: HDFC Bank, IFSC: HDFC0309850
+
+Please process today to avoid supply interruption and a late fee of 2% per month. For queries WhatsApp us on +91 90000 44651.
+
+Regards,
+Ikshita Biswas
+Kala, Toor and Lanka",Invoice_INV-25-26-2358.pdf,SUP016,PO0177,INV/25-26/2358,304512.57,766191284117,HDFC0309850,,Fraud,BANK_DETAILS_CHANGE,HOLD,payments.desk@yahoo.com,,BANK_DETAILS_CHANGED;URGENCY_LANGUAGE;PHONE_NOT_ON_FILE;LOOKALIKE_DOMAIN;KNOWN_BAD_INDICATOR
+EML070,2025-07-14 04:04,Rehaan Kalita,rehaan.kalita@darwason.in,Dispatch update - PO0594,"Dear Sir/Madam,
+
+Your order PO0594 (Van Heusen Blazer, 128 units) has been dispatched via Delhivery, LR no 331266109. Expected delivery in 3-4 days.
+
+Regards,
+Rehaan Kalita
+Dar-Wason",,SUP036,PO0594,,,,,,Legit,LEGIT_DISPATCH,PASS,rehaan.kalita@darwason.in,,
+EML071,2025-07-14 09:39,Devi and Sons,devi.billing123@yahoo.com,OVERDUE: Invoice INV/25-26/6239,"Dear Sir,
+
+Invoice INV/25-26/6239 against PO PO0041 for Rs 3,63,686.14 is pending for 60 days. Kindly release payment immediately to avoid legal notice.
+Account name: Devi and Sons
+Account no: 902504290193
+Bank: State Bank of India, IFSC: SBIN0588953
+
+Regards,
+Leela Dua
+Devi and Sons",Invoice_INV-25-26-6239.pdf,SUP027,PO0041,INV/25-26/6239,363686.14,902504290193,SBIN0588953,,Fraud,FAKE_INVOICE,HOLD,devi.billing123@yahoo.com,,PO_SUPPLIER_MISMATCH;BANK_DETAILS_CHANGED;SENDER_DOMAIN_MISMATCH;KNOWN_BAD_INDICATOR
+EML072,2025-07-15 03:23,"Priya Prabhakar - Mitra, Dara and Barman",priya.prabhakar@mitradara.co.in,Invoice INV/25-26/2370 against PO0760,"Dear Team,
+
+Sharing our tax invoice INV/25-26/2370 dated 11 July for PO PO0760, total Rs 3,89,753.60. You may pay via NEFT/RTGS to the registered account ending 6474 or by UPI to mitradara@hdfcbank as before.
+
+Regards,
+Priya Prabhakar
+Mitra, Dara and Barman
+GSTIN: 36SJWJA6409V1Z3",Invoice_INV-25-26-2370.pdf,SUP032,PO0760,INV/25-26/2370,389753.6,,,mitradara@hdfcbank,Legit,LEGIT_INVOICE,PASS,priya.prabhakar@mitradara.co.in,,
+EML073,2025-07-15 06:33,Ryan Sharma,ryan.sharma@baradsinghal.in,Quotation for next quarter,"Dear Sir/Madam,
+
+As discussed, our quotation for Tata Tea Premium 250g is attached. Valid for 15 days. Happy to arrange a call.
+
+Regards,
+Ryan Sharma
+Barad-Singhal",Quotation.pdf,SUP020,,,,,,,Legit,LEGIT_QUOTE,PASS,ryan.sharma@baradsinghal.in,,
+EML074,2025-07-15 07:56,Chatresh Doshi - Rattan Group,chatresh.doshi@rattantraders-payments.com,Invoice INV/25-26/0956 against PO0424,"Dear Sir/Madam,
+
+Please find attached invoice INV/25-26/0956 for PO PO0424, amount Rs 2,66,935.00.
+Account name: Rattan Group
+Account no: 711592124998
+Bank: HDFC Bank, IFSC: HDFC0569847
+
+Regards,
+Chatresh Doshi
+Rattan Group
+GSTIN: 09DZWDU8367H1ZQ",Invoice_INV-25-26-0956.pdf,SUP038,PO0424,INV/25-26/0956,266935.0,711592124998,HDFC0569847,,Fraud,LOOKALIKE_DOMAIN,HOLD,chatresh.doshi@rattantraders-payments.com,,LOOKALIKE_DOMAIN;SENDER_DOMAIN_MISMATCH;KNOWN_BAD_INDICATOR
+EML075,2025-07-15 14:29,"Januja Sankar - Sarin, Agarwal and Venkatesh",accounts@sarinagarwal.biz,Important: new remittance instructions,"Dear Sir,
+
+Kindly note we have changed our bank account with immediate effect following an internal audit. All pending payments including INV/25-26/1294 (Rs 44,014.36, PO PO0573) must be paid to the new account below. The old account is closed.
+Account name: Sarin, Agarwal and Venkatesh
+Account no: 990516991872
+Bank: Bank of Baroda, IFSC: BARB0401078
+
+Please process today to avoid supply interruption and a late fee of 2% per month. For queries WhatsApp us on +91 90000 56743.
+
+Regards,
+Januja Sankar
+Sarin, Agarwal and Venkatesh",Invoice_INV-25-26-1294.pdf,SUP022,PO0573,INV/25-26/1294,44014.36,990516991872,BARB0401078,,Fraud,BANK_DETAILS_CHANGE,HOLD,payments.desk@gmail.com,,BANK_DETAILS_CHANGED;URGENCY_LANGUAGE;PHONE_NOT_ON_FILE;LOOKALIKE_DOMAIN;KNOWN_BAD_INDICATOR
+EML076,2025-07-15 20:29,Devika Rastogi,accounts@sampathkakar.co.in,Revised invoice INV/25-26/6035,"Dear Sir/Madam,
+
+Revised invoice INV/25-26/6035 for PO PO0636: Rs 1,34,757.77 (freight and fuel surcharge added). Please pay to:
+Account name: Sampath, Kakar and Zacharia
+Account no: 991183842513
+Bank: HDFC Bank, IFSC: HDFC0542784
+
+Regards,
+Devika Rastogi
+Sampath, Kakar and Zacharia
+GSTIN: 29VRJVD2411X1ZZ",Invoice_INV-25-26-6035.pdf,SUP009,PO0636,INV/25-26/6035,134757.77,991183842513,HDFC0542784,,Fraud,AMOUNT_MISMATCH,REVIEW,accounts@sampathkakar.co.in,,AMOUNT_MISMATCH_PO
+EML077,2025-07-16 06:40,Leela Dua - Devi and Sons,accounts@devitrading-payments.in,Important: new remittance instructions,"Dear Sir,
+
+Kindly note we have changed our bank account with immediate effect following an internal audit. All pending payments including INV/25-26/2755 (Rs 4,39,726.23, PO PO0292) must be paid to the new account below. The old account is closed.
+Account name: Devi and Sons
+Account no: 831901302056
+Bank: Axis Bank, IFSC: UTIB0981528
+
+This is urgent - our accounts team has flagged the payment as overdue. For queries WhatsApp us on +91 90000 33978.
+
+Regards,
+Leela Dua
+Devi and Sons",Invoice_INV-25-26-2755.pdf,SUP027,PO0292,INV/25-26/2755,439726.23,831901302056,UTIB0981528,,Fraud,BANK_DETAILS_CHANGE,HOLD,accounts@devitrading-payments.in,,BANK_DETAILS_CHANGED;URGENCY_LANGUAGE;PHONE_NOT_ON_FILE;LOOKALIKE_DOMAIN;KNOWN_BAD_INDICATOR
+EML078,2025-07-16 17:38,Rehaan Kalita - Dar-Wason,rehaan.kalita@darwason.in,Invoice INV/25-26/9339 against PO0175,"Dear Team,
+
+Sharing our tax invoice INV/25-26/9339 dated 11 July for PO PO0175, total Rs 1,22,940.42. You may pay via NEFT/RTGS to the registered account ending 3900 or by UPI to darwason@hdfcbank as before.
+
+Regards,
+Rehaan Kalita
+Dar-Wason
+GSTIN: 33SGHKY2904E1Z8",Invoice_INV-25-26-9339.pdf,SUP036,PO0175,INV/25-26/9339,122940.42,,,darwason@hdfcbank,Legit,LEGIT_INVOICE,PASS,rehaan.kalita@darwason.in,,
+EML079,2025-07-17 09:52,Azad Narayanan - Bhargava and Sons,azad.narayanan@bhargavatrading.in,Invoice INV/25-26/0236 against PO0652,"Hello,
+
+Invoice INV/25-26/0236 against PO PO0652 is attached (Amul Milk 1L (Pack of 1) x 691). Amount payable: Rs 1,86,583.82.
+Bank details as on your vendor record: A/c 53487401640, IFSC KKBK0052427.
+
+Thanks,
+Azad Narayanan
+Bhargava and Sons",Invoice_INV-25-26-0236.pdf,SUP010,PO0652,INV/25-26/0236,186583.82,53487401640,KKBK0052427,,Legit,LEGIT_INVOICE,PASS,azad.narayanan@bhargavatrading.in,,
+EML080,2025-07-17 17:01,Ikshita Biswas,ikshita.biswas@kalatoor.co.in,Dispatch update - PO0771,"Dear Sir/Madam,
+
+Your order PO0771 (Tomato 1kg (Pack of 2), 417 units) has been dispatched via Blue Dart, LR no 762983347. Expected delivery in 3-4 days.
+
+Regards,
+Ikshita Biswas
+Kala, Toor and Lanka",,SUP016,PO0771,,,,,,Legit,LEGIT_DISPATCH,PASS,ikshita.biswas@kalatoor.co.in,,
+EML081,2025-07-17 19:25,De-Lala,de-lala.billing7@outlook.com,OVERDUE: Invoice INV/25-26/4595,"Dear Sir,
+
+Invoice INV/25-26/4595 against PO PO9867 for Rs 1,50,140.23 is pending for 60 days. Kindly release payment immediately to avoid legal notice.
+Account name: De-Lala
+Account no: 845960945449
+Bank: ICICI Bank, IFSC: ICIC0014954
+
+Regards,
+Riya Sane
+De-Lala",Invoice_INV-25-26-4595.pdf,SUP018,PO9867,INV/25-26/4595,150140.23,845960945449,ICIC0014954,,Fraud,FAKE_INVOICE,HOLD,de-lala.billing7@outlook.com,,PO_NOT_FOUND;BANK_DETAILS_CHANGED;SENDER_DOMAIN_MISMATCH;KNOWN_BAD_INDICATOR
+EML082,2025-07-17 22:41,"Umang Issac - Nayak, Chander and Keer",umang.issac@nayakchander.in,Invoice INV/25-26/3275 against PO0041,"Hello,
+
+Invoice INV/25-26/3275 against PO PO0041 is attached (Borosil Casserole Dish x 142). Amount payable: Rs 3,63,686.14.
+Bank details as on your vendor record: A/c 749649909133, IFSC UTIB0412328.
+
+Thanks,
+Umang Issac
+Nayak, Chander and Keer",Invoice_INV-25-26-3275.pdf,SUP024,PO0041,INV/25-26/3275,363686.14,749649909133,UTIB0412328,,Legit,LEGIT_INVOICE,PASS,umang.issac@nayakchander.in,,
+EML083,2025-07-18 01:29,Udant Dewan,udant.dewan@maharajbakshi.in,Price revision notice,"Dear Sir/Madam,
+
+Due to raw material costs, prices will increase by 6% effective next order. Revised rate card attached.
+
+Regards,
+Udant Dewan
+Maharaj, Bakshi and Choudhury",Rate_card.pdf,SUP001,,,,,,,Legit,LEGIT_PRICE_NOTICE,PASS,udant.dewan@maharajbakshi.in,,
+EML084,2025-07-18 13:23,Pranav Lanka - Bala-D’Alia,pranav.lanka@balad.in,Invoice INV/25-26/2561 against PO0618,"Hello,
+
+Invoice INV/25-26/2561 against PO PO0618 is attached (Meyer Glass Storage Set x 111). Amount payable: Rs 1,53,125.61.
+Bank details as on your vendor record: A/c 48083136783777, IFSC SBIN0014363.
+
+Thanks,
+Pranav Lanka
+Bala-D’Alia",Invoice_INV-25-26-2561.pdf,SUP021,PO0618,INV/25-26/2561,153125.61,48083136783777,SBIN0014363,,Legit,LEGIT_INVOICE,PASS,pranav.lanka@balad.in,,
+EML085,2025-07-18 19:20,Anita Manda,anita.manda@chhabratraders.in,Dispatch update - PO0372,"Dear Sir/Madam,
+
+Your order PO0372 (Allen Solly Polo Tee, 103 units) has been dispatched via VRL Logistics, LR no 402588358. Expected delivery in 3-4 days.
+
+Regards,
+Anita Manda
+Chhabra Ltd",,SUP017,PO0372,,,,,,Legit,LEGIT_DISPATCH,PASS,anita.manda@chhabratraders.in,,
+EML086,2025-07-18 19:47,Anita Manda - Chhabra Ltd,anita.manda123@yahoo.com,New UPI ID for payments,"Hello,
+
+We have moved to a new UPI ID for faster settlement: chhabratraders62@paytm. Payments to the old ID have been failing. Please update and pay Rs 3,90,909.75 for PO PO0034 today.
+
+Anita Manda
+Chhabra Ltd",,SUP017,PO0034,,390909.75,,,chhabratraders62@paytm,Fraud,UPI_CHANGE,HOLD,anita.manda123@yahoo.com,,UPI_CHANGED;FREEMAIL_SENDER;SENDER_DOMAIN_MISMATCH;URGENCY_LANGUAGE;KNOWN_BAD_INDICATOR
+EML087,2025-07-18 22:30,Accounts - Kata LLC,accounts@katatrading.in,Statement of account,"Dear Sir/Madam,
+
+Statement of account as on 15 July: outstanding Rs 2,93,533.32 against PO PO0244 (invoice INV/25-26/2334). No change in our banking details.
+
+Regards,
+Sudiksha Bobal
+Kata LLC",Statement_July.pdf,SUP040,PO0244,INV/25-26/2334,293533.32,,,,Legit,LEGIT_STATEMENT,PASS,accounts@katatrading.in,,
+EML088,2025-07-19 02:44,Leela Dua - Devi and Sons,leela.dua@devitrading.in,Invoice INV/25-26/8076 against PO0429,"Hello,
+
+Invoice INV/25-26/8076 against PO PO0429 is attached (Tomato 1kg (Pack of 1) x 592). Amount payable: Rs 1,84,040.96.
+Bank details as on your vendor record: A/c 807154516808, IFSC CNRB0760385.
+
+Thanks,
+Leela Dua
+Devi and Sons",Invoice_INV-25-26-8076.pdf,SUP027,PO0429,INV/25-26/8076,184040.96,807154516808,CNRB0760385,,Legit,LEGIT_INVOICE,PASS,leela.dua@devitrading.in,,
+EML089,2025-07-19 03:13,Abeer Dutta,abeer.dutta@sentrading.in,Change of bank account - signed letter attached,"Dear Sir/Madam,
+
+We have moved our current account to Axis Bank following a merger of our group entities. A signed letter on our letterhead is attached. Invoice INV/25-26/9056 (Rs 1,29,309.82, PO PO0611) may be paid to:
+Account name: Sen PLC
+Account no: 441975466176
+Bank: Axis Bank, IFSC: UTIB0620471
+
+Please verify by calling our registered accounts number 915116155940 before updating your records.
+
+Regards,
+Abeer Dutta
+Sen PLC
+GSTIN: 09LHEQP1012U1ZA",Bank_change_letter.pdf,SUP002,PO0611,INV/25-26/9056,129309.82,441975466176,UTIB0620471,,Legit,LEGIT_BANK_CHANGE_VERIFIED,REVIEW,abeer.dutta@sentrading.in,,BANK_DETAILS_CHANGED
+EML090,2025-07-19 04:31,Zaid Chauhan - Baral-Parmar,zaid.chauhan@baralparrnar.co.in,Invoice INV/25-26/0525 against PO0676,"Dear Sir/Madam,
+
+Please find attached invoice INV/25-26/0525 for PO PO0676, amount Rs 59,040.66.
+Account name: Baral-Parmar
+Account no: 91241904966319
+Bank: ICICI Bank, IFSC: ICIC0314919
+
+Regards,
+Zaid Chauhan
+Baral-Parmar
+GSTIN: 29LRNVL1850N1ZV",Invoice_INV-25-26-0525.pdf,SUP019,PO0676,INV/25-26/0525,59040.66,91241904966319,ICIC0314919,,Fraud,LOOKALIKE_DOMAIN,HOLD,zaid.chauhan@baralparrnar.co.in,,LOOKALIKE_DOMAIN;SENDER_DOMAIN_MISMATCH
+EML091,2025-07-19 09:10,GST Compliance Cell,noreply@gstin-update-secure.com,GST registration suspension notice - action required,"Dear Taxpayer,
+
+Your GST registration is under review due to mismatched returns and will be suspended within 24 hours. Pay the penalty of Rs 14,750.00 at the link below or by UPI to gstpenalty932@ybl to avoid cancellation.
+https://gstin-update-secure.com/pay?ref=18306178
+
+GST Compliance Cell",,,,,14750,,,gstpenalty932@ybl,Fraud,GST_KYC_PHISHING,HOLD,noreply@gstin-update-secure.com,https://gstin-update-secure.com/pay?ref=18306178,PHISHING_LINK;AUTHORITY_IMPERSONATION;URGENCY_LANGUAGE;SENDER_DOMAIN_MISMATCH
+EML092,2025-07-19 14:36,Theodore Goda - Ahluwalia Inc,accounts@ahluwaliatrading.in,Invoice INV/25-26/4534 against PO0245,"Hello,
+
+Invoice INV/25-26/4534 against PO PO0245 is attached (Allen Solly Polo Tee x 150). Amount payable: Rs 4,17,819.00.
+Bank details as on your vendor record: A/c 134936183242, IFSC BARB0102499.
+
+Thanks,
+Theodore Goda
+Ahluwalia Inc",Invoice_INV-25-26-4534.pdf,SUP025,PO0245,INV/25-26/4534,417819.0,134936183242,BARB0102499,,Legit,LEGIT_INVOICE,PASS,accounts@ahluwaliatrading.in,,
+EML093,2025-07-19 15:13,Azad Narayanan,azad.narayanan@bhargavatrading.in,Quotation for next quarter,"Dear Sir/Madam,
+
+As discussed, our quotation for Bajaj Mixer Grinder 500W is attached. Valid for 15 days. Happy to arrange a call.
+
+Regards,
+Azad Narayanan
+Bhargava and Sons",Quotation.pdf,SUP010,,,,,,,Legit,LEGIT_QUOTE,PASS,azad.narayanan@bhargavatrading.in,,
+EML094,2025-07-19 18:50,Praneel Shere,praneel.shere7@yahoo.com,Are you available?,"Hi,
+
+I'm in a meeting and can't take calls. I need an urgent transfer of Rs 3,45,300.00 to a new vendor today. Details:
+Account name: Sri Vinayaka Enterprises
+Account no: 513152854781
+Bank: HDFC Bank, IFSC: HDFC0506185
+
+Do it now and send me the UTR. Please keep this between us until I'm back.
+
+Praneel Shere",,,,,345300.0,513152854781,HDFC0506185,,Fraud,INTERNAL_IMPERSONATION,HOLD,praneel.shere7@yahoo.com,,INTERNAL_IMPERSONATION;FREEMAIL_SENDER;URGENCY_LANGUAGE;SECRECY_REQUEST;NEW_BENEFICIARY;KNOWN_BAD_INDICATOR
+EML095,2025-07-20 00:01,"Michael Dutta - Tak, Chand and Batta",michael.dutta@takchand.com,Invoice INV/25-26/3104 against PO0171,"Dear Sir/Madam,
+
+Please find attached invoice INV/25-26/3104 for 124 units of Inalsa Food Processor supplied against your purchase order PO0171. Invoice value: Rs 3,73,393.76 (inclusive of GST). Payment terms as agreed.
+
+Our bank details remain unchanged:
+Account name: Tak, Chand and Batta
+Account no: 65667010651
+Bank: HDFC Bank, IFSC: HDFC0333872
+
+Regards,
+Michael Dutta
+Tak, Chand and Batta
+GSTIN: 09FIOHC7810U1ZY",Invoice_INV-25-26-3104.pdf,SUP006,PO0171,INV/25-26/3104,373393.76,65667010651,HDFC0333872,,Legit,LEGIT_INVOICE,PASS,michael.dutta@takchand.com,,
+EML096,2025-07-20 10:44,Udant Dewan,accounts@maharajbakshi.in,Revised invoice INV/25-26/3874,"Dear Sir/Madam,
+
+Revised invoice INV/25-26/3874 for PO PO0525: Rs 7,12,676.04 (freight and fuel surcharge added). Please pay to:
+Account name: Maharaj, Bakshi and Choudhury
+Account no: 41316475255
+Bank: Canara Bank, IFSC: CNRB0341928
+
+Regards,
+Udant Dewan
+Maharaj, Bakshi and Choudhury
+GSTIN: 33FOMIU8350H1Z2",Invoice_INV-25-26-3874.pdf,SUP001,PO0525,INV/25-26/3874,712676.04,41316475255,CNRB0341928,,Fraud,AMOUNT_MISMATCH,REVIEW,accounts@maharajbakshi.in,,AMOUNT_MISMATCH_PO
+EML097,2025-07-20 14:44,"Januja Sankar - Sarin, Agarwal and Venkatesh",sarin.accounts123@outlook.com,Urgent: Updated banking details,"Dear Sir,
+
+Kindly note we have changed our bank account with immediate effect following an internal audit. All pending payments including INV/25-26/6201 (Rs 2,15,275.44, PO PO0374) must be paid to the new account below. The old account is closed.
+Account name: Sarin, Agarwal and Venkatesh
+Account no: 203771070449
+Bank: Canara Bank, IFSC: CNRB0641049
+
+Please process today to avoid supply interruption and a late fee of 2% per month. For queries WhatsApp us on +91 90000 06670.
+
+Regards,
+Januja Sankar
+Sarin, Agarwal and Venkatesh",Invoice_INV-25-26-6201.pdf,SUP022,PO0374,INV/25-26/6201,215275.44,203771070449,CNRB0641049,,Fraud,BANK_DETAILS_CHANGE,HOLD,sarin.accounts123@outlook.com,,BANK_DETAILS_CHANGED;URGENCY_LANGUAGE;PHONE_NOT_ON_FILE;FREEMAIL_SENDER;SENDER_DOMAIN_MISMATCH
+EML098,2025-07-20 17:45,Zaid Chauhan - Baral-Parmar,zaid.chauhan@baralparmar.co.in,Invoice INV/25-26/5958 against PO0504,"Hello,
+
+Invoice INV/25-26/5958 against PO PO0504 is attached (Meyer Glass Storage Set x 146). Amount payable: Rs 2,39,530.52.
+Bank details as on your vendor record: A/c 91241904966319, IFSC ICIC0314919.
+
+Thanks,
+Zaid Chauhan
+Baral-Parmar",Invoice_INV-25-26-5958.pdf,SUP019,PO0504,INV/25-26/5958,239530.52,91241904966319,ICIC0314919,,Legit,LEGIT_INVOICE,PASS,zaid.chauhan@baralparmar.co.in,,
+EML099,2025-07-20 22:31,Azad Narayanan - Bhargava and Sons,azad.narayanan@accounts-bhargavatrading.in,Invoice INV/25-26/7162 against PO0583,"Dear Sir/Madam,
+
+Please find attached invoice INV/25-26/7162 for PO PO0583, amount Rs 2,81,320.56.
+Account name: Bhargava and Sons
+Account no: 53487401640
+Bank: Kotak Mahindra Bank, IFSC: KKBK0052427
+
+Regards,
+Azad Narayanan
+Bhargava and Sons
+GSTIN: 09RADCW2805S1ZZ",Invoice_INV-25-26-7162.pdf,SUP010,PO0583,INV/25-26/7162,281320.56,53487401640,KKBK0052427,,Fraud,LOOKALIKE_DOMAIN,HOLD,azad.narayanan@accounts-bhargavatrading.in,,LOOKALIKE_DOMAIN;SENDER_DOMAIN_MISMATCH;KNOWN_BAD_INDICATOR
+EML100,2025-07-21 07:12,Devika Rastogi,devika.rastogi@sampathkakar.co.in,Price revision notice,"Dear Sir/Madam,
+
+Due to raw material costs, prices will increase by 8% effective next order. Revised rate card attached.
+
+Regards,
+Devika Rastogi
+Sampath, Kakar and Zacharia",Rate_card.pdf,SUP009,,,,,,,Legit,LEGIT_PRICE_NOTICE,PASS,devika.rastogi@sampathkakar.co.in,,

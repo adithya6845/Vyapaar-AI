@@ -1951,6 +1951,9 @@ function openPricingAdvisorModal() {
           selectedIdx = 0;
           renderPricingDetails();
           askInput.value = '';
+          askBtn.innerHTML = originalText;
+          askBtn.disabled = false;
+          askInput.disabled = false;
           return;
         }
       } catch (e) {
@@ -3185,4 +3188,178 @@ function openCollectionsAgentModal(d) {
   
   modal.style.display = 'flex';
 }
+
+async function loadFraudSimulation() {
+  const btn = document.getElementById('btnFraudSimulate');
+  if(btn) { btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Running...'; btn.disabled = true; }
+  
+  const emailBody = document.getElementById('fg-scammer-body').innerText;
+  
+  try {
+    const res = await fetch('/api/fraud-guard/analyze', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email_text: emailBody })
+    });
+    if (res.ok) {
+      const data = await res.json();
+      document.getElementById('fg-scam-type').innerText = data.scam_type || 'Unknown';
+      document.getElementById('fg-risk-score').innerText = data.risk_score || 'N/A';
+      document.getElementById('fg-persona').innerText = data.persona || 'Default Persona';
+      document.getElementById('fg-mailbox').innerText = data.mailbox || 'Unknown Mailbox';
+      
+      // Update fake duration/messages for the simulation
+      document.getElementById('fg-duration').innerText = Math.floor(Math.random() * 5 + 1) + 'h ' + Math.floor(Math.random() * 59) + 'min';
+      document.getElementById('fg-total-messages').innerText = '4 messages (2 turns)';
+
+      document.getElementById('fg-ioc-count').innerText = data.iocs ? data.iocs.length : 0;
+      document.getElementById('fg-ioc-count2').innerText = data.iocs ? data.iocs.length : 0;
+      
+      let iocHtml = '';
+      if (data.iocs && data.iocs.length) {
+        data.iocs.forEach(ioc => {
+          const levelColor = ioc.level === 'HIGH' ? '#ef4444' : (ioc.level === 'MEDIUM' ? '#f59e0b' : '#10b981');
+          iocHtml += `<div style="background:#13151a; border:1px solid #2d3039; border-radius:6px; padding:10px 12px; display:flex; justify-content:space-between; align-items:center;">
+            <div>
+              <div style="font-size:0.8rem; color:#f3f4f6; font-weight:600; font-family:monospace; margin-bottom:2px;">${ioc.value}</div>
+              <div style="font-size:0.55rem; color:#6b7280; text-transform:uppercase; font-weight:700; letter-spacing:1px;">${ioc.type}</div>
+            </div>
+            <span style="background:rgba(255,255,255,0.05); color:${levelColor}; font-size:0.6rem; font-weight:700; padding:2px 6px; border-radius:4px; text-transform:uppercase; border:1px solid rgba(255,255,255,0.1);">${ioc.level}</span>
+          </div>`;
+        });
+      } else {
+        iocHtml = `<div style="text-align:center; padding:20px; color:#6b7280; font-size:0.8rem;">No IOCs found.</div>`;
+      }
+      document.getElementById('fg-iocs-list').innerHTML = iocHtml;
+      
+      currentAiReply = data.ai_reply || 'Failed to generate reply.';
+      document.getElementById('fg-sentinel-body').innerHTML = currentAiReply;
+      document.getElementById('fg-action-buttons').style.display = 'block';
+    } else {
+      document.getElementById('fg-sentinel-body').innerHTML = '<span style="color:#ef4444;">Error connecting to NVIDIA Fraud AI API.</span>';
+    }
+  } catch (err) {
+    console.error(err);
+    document.getElementById('fg-sentinel-body').innerHTML = '<span style="color:#ef4444;">Network error.</span>';
+  } finally {
+    if(btn) { btn.innerHTML = '<i class="fas fa-play"></i> Run Simulation'; btn.disabled = false; }
+  }
+}
+
+async function fetchNewSuspiciousEmail() {
+  const btn = document.getElementById('btnFetchEmail');
+  if(btn) { btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading...'; btn.disabled = true; }
+  
+  try {
+    const res = await fetch('/api/fraud-guard/fetch-email');
+    if (res.ok) {
+      const data = await res.json();
+      document.getElementById('fg-scammer-body').innerHTML = data.email_text || 'No content';
+      
+      // Store globals
+      currentScammerEmail = data.raw_from_email || '';
+      currentScammerSubject = data.raw_subject || '';
+      
+      // Reset the rest of the UI
+      document.getElementById('fg-sentinel-body').innerHTML = '<div style="color:#6b7280; font-style:italic;">Awaiting analysis...</div>';
+      document.getElementById('fg-action-buttons').style.display = 'none';
+      document.getElementById('fg-iocs-list').innerHTML = '<div style="text-align:center; padding:20px; color:#6b7280; font-size:0.8rem;">Click &apos;Run Simulation&apos; to scan.</div>';
+      
+      // Update scam type from dataset immediately
+      document.getElementById('fg-scam-type').innerText = data.scam_type || 'Unknown';
+      
+      document.getElementById('fg-risk-score').innerText = '--';
+      document.getElementById('fg-persona').innerText = '--';
+      document.getElementById('fg-mailbox').innerText = '--';
+      document.getElementById('fg-started').innerText = data.time || 'Unknown';
+      document.getElementById('fg-duration').innerText = '0m';
+      document.getElementById('fg-total-messages').innerText = '1 message';
+      document.getElementById('fg-ioc-count').innerText = '0';
+      document.getElementById('fg-ioc-count2').innerText = '0';
+    } else {
+      console.error("Failed to fetch email");
+    }
+  } catch (err) {
+    console.error(err);
+  } finally {
+    if(btn) { btn.innerHTML = '<i class="fas fa-random"></i> Load Real Scam Data'; btn.disabled = false; }
+  }
+}
+
+// Global vars for mailto link
+let currentScammerEmail = '';
+let currentScammerSubject = '';
+let currentAiReply = '';
+
+function sendGeneratedEmail() {
+  if (!currentScammerEmail) {
+    alert("No email data loaded.");
+    return;
+  }
+  
+  // Format body by replacing <br> with newlines and stripping other HTML
+  let bodyText = currentAiReply.replace(/<br\s*\/?>/gi, '\r\n');
+  let tempDiv = document.createElement("div");
+  tempDiv.innerHTML = bodyText;
+  bodyText = tempDiv.textContent || tempDiv.innerText || "";
+  
+  const to = encodeURIComponent(currentScammerEmail);
+  const subject = encodeURIComponent("Re: " + currentScammerSubject);
+  const body = encodeURIComponent(bodyText);
+  
+  window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+}
+
+// SPLASH LOADER LOGIC
+const SPLASH_PHASES = ["logo", "look", "reveal"];
+const SPLASH_DUR = { logo: 1300, look: 1900, reveal: 1000 };
+
+function runSplashLoader() {
+    const overlay = document.getElementById('pl-overlay');
+    const logo = document.getElementById('pl-logo');
+    if (!overlay || !logo) return;
+
+    let timers = [];
+    const applyPhase = (p) => {
+      if (p === "logo") {
+        logo.classList.add("pl-logo--in");
+      } else if (p === "look") {
+        logo.classList.remove("pl-logo--in");
+        logo.classList.add("pl-logo--steady", "pl-logo--look");
+      } else if (p === "reveal") {
+        logo.classList.remove("pl-logo--look");
+        logo.classList.add("pl-logo--steady");
+        
+        const flyer = document.querySelector('.pl-flyer');
+        if (flyer) flyer.classList.add('pl-flyer--travel');
+        
+        overlay.style.background = 'transparent'; // Let the background disappear quickly
+        
+        setTimeout(() => {
+            overlay.classList.add("pl-overlay--fadeout");
+        }, 100);
+        
+        setTimeout(() => {
+            overlay.style.display = 'none';
+        }, 800);
+      }
+    };
+    
+    const next = (i) => {
+      if (i >= SPLASH_PHASES.length) return;
+      const p = SPLASH_PHASES[i];
+      applyPhase(p);
+      timers.push(setTimeout(() => next(i + 1), SPLASH_DUR[p]));
+    };
+    
+    next(0);
+}
+
+// Run the splash on page load
+document.addEventListener('DOMContentLoaded', () => {
+    runSplashLoader();
+});
+
+
+
 

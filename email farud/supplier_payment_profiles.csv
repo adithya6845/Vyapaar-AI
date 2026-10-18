@@ -1,0 +1,41 @@
+SupplierID,AccountHolderName,BankName,AccountNumber,IFSC,UPI_ID,GSTIN,VerifiedDate,VerifiedBy,VerificationMethod
+SUP001,"Maharaj, Bakshi and Choudhury",Canara Bank,41316475255,CNRB0341928,maharajbakshi@cnrb,33FOMIU8350H1Z2,2025-04-26,EMP17,Bank letter + callback
+SUP002,Sen PLC,State Bank of India,39537672423,SBIN0884969,sentrading@sbi,09LHEQP1012U1ZA,2025-04-26,EMP18,Onboarding visit
+SUP003,"Sharaf, Yadav and Dash",HDFC Bank,697848018451,HDFC0462704,sharafyadav@hdfcbank,07QDUJU8932L1ZA,2025-04-18,EMP24,Cancelled cheque + callback
+SUP004,Kadakia-Loke,Kotak Mahindra Bank,701543039117,KKBK0182278,kadakialoke@kotak,07IQTNG8346V1ZN,2025-04-15,EMP24,Bank letter + callback
+SUP005,Murty and Sons,HDFC Bank,31509839301,HDFC0031051,murtysupply@hdfcbank,33IVPGR2997H1ZU,2025-04-26,EMP18,Cancelled cheque + callback
+SUP006,"Tak, Chand and Batta",HDFC Bank,65667010651,HDFC0333872,takchand@hdfcbank,09FIOHC7810U1ZY,2025-04-01,EMP02,Cancelled cheque + callback
+SUP007,Saran-Dugar,ICICI Bank,773602606474,ICIC0687234,sarandugar@icici,33BSXRB5009P1ZW,2025-04-17,EMP08,Cancelled cheque + callback
+SUP008,Suresh-Bahl,Kotak Mahindra Bank,21913619399,KKBK0091699,sureshbahl@kotak,36IGVWK3462V1ZJ,2025-04-15,EMP17,Cancelled cheque + callback
+SUP009,"Sampath, Kakar and Zacharia",HDFC Bank,991183842513,HDFC0542784,sampathkakar@hdfcbank,29VRJVD2411X1ZZ,2025-04-05,EMP12,Bank letter + callback
+SUP010,Bhargava and Sons,Kotak Mahindra Bank,53487401640,KKBK0052427,bhargavatrading@kotak,09RADCW2805S1ZZ,2025-04-05,EMP18,Cancelled cheque + callback
+SUP011,Chandra Inc,HDFC Bank,505331586923,HDFC0226025,chandratrading@hdfcbank,09ZVXZH4216B1ZU,2025-04-08,EMP10,Bank letter + callback
+SUP012,Sami and Sons,State Bank of India,330365414586,SBIN0850142,samisupply@sbi,24BDTNL5698D1ZO,2025-04-19,EMP10,Bank letter + callback
+SUP013,Gala Group,HDFC Bank,60883561595148,HDFC0465648,galatrading@hdfcbank,07GNVMV2994M1ZZ,2025-04-01,EMP12,Bank letter + callback
+SUP014,"Murthy, Bhandari and Bedi",ICICI Bank,995777387214,ICIC0895134,murthybhandari@icici,33ZGEAB3791O1ZQ,2025-04-21,EMP10,Onboarding visit
+SUP015,Bumb Group,Canara Bank,763201632870,CNRB0831727,bumbenterprises@cnrb,36YOTXQ6872X1ZU,2025-04-15,EMP12,Cancelled cheque + callback
+SUP016,"Kala, Toor and Lanka",Bank of Baroda,48734714345581,BARB0223623,kalatoor@barodampay,27NNKRO6036M1Z1,2025-04-25,EMP18,Bank letter + callback
+SUP017,Chhabra Ltd,HDFC Bank,466889373467,HDFC0065627,chhabratraders@hdfcbank,07TRAMS9016E1ZT,2025-04-06,EMP01,Bank letter + callback
+SUP018,De-Lala,Axis Bank,375564641708,UTIB0053100,delala@axisbank,33GATEH2719G1ZT,2025-04-23,EMP12,Bank letter + callback
+SUP019,Baral-Parmar,ICICI Bank,91241904966319,ICIC0314919,baralparmar@icici,29LRNVL1850N1ZV,2025-04-04,EMP18,Bank letter + callback
+SUP020,Barad-Singhal,Canara Bank,262849877694,CNRB0531473,baradsinghal@cnrb,19STVMK0752P1ZD,2025-04-12,EMP12,Bank letter + callback
+SUP021,Bala-D’Alia,State Bank of India,48083136783777,SBIN0014363,balad@sbi,24VSLPR8568K1ZM,2025-04-23,EMP22,Bank letter + callback
+SUP022,"Sarin, Agarwal and Venkatesh",State Bank of India,313518233749,SBIN0894134,sarinagarwal@sbi,33LFJAW8240B1ZZ,2025-04-10,EMP08,Onboarding visit
+SUP023,Raghavan-Ghosh,Bank of Baroda,109477752047,BARB0116719,raghavanghosh@barodampay,29EEZSJ1318Y1ZQ,2025-04-20,EMP10,Onboarding visit
+SUP024,"Nayak, Chander and Keer",Axis Bank,749649909133,UTIB0412328,nayakchander@axisbank,27FANOW9740H1ZI,2025-04-23,EMP12,Onboarding visit
+SUP025,Ahluwalia Inc,Bank of Baroda,134936183242,BARB0102499,ahluwaliatrading@barodampay,24ODOWJ6488P1ZS,2025-04-03,EMP01,Bank letter + callback
+SUP026,Sehgal-Dutt,Canara Bank,940139904902,CNRB0787429,sehgaldutt@cnrb,09UPCPL6551F1ZL,2025-04-14,EMP22,Bank letter + callback
+SUP027,Devi and Sons,Canara Bank,807154516808,CNRB0760385,devitrading@cnrb,19UOYBG4824O1ZV,2025-04-04,EMP01,Onboarding visit
+SUP028,Sood-Ahuja,Kotak Mahindra Bank,24808613171,KKBK0274846,soodahuja@kotak,19PHORE6398X1Z8,2025-04-03,EMP12,Bank letter + callback
+SUP029,"Ravel, Gandhi and Sibal",State Bank of India,40449972787558,SBIN0867533,ravelgandhi@sbi,09HYNBK7662P1Z2,2025-04-05,EMP24,Onboarding visit
+SUP030,Sama-Krishnan,State Bank of India,71870262174,SBIN0596158,samakrishnan@sbi,09KUWYP8091H1ZI,2025-04-08,EMP02,Bank letter + callback
+SUP031,"Contractor, Kamdar and Shroff",HDFC Bank,17240050455623,HDFC0869222,contractorkamdar@hdfcbank,27TMTVH7923O1ZG,2025-04-15,EMP12,Onboarding visit
+SUP032,"Mitra, Dara and Barman",HDFC Bank,482175946474,HDFC0367136,mitradara@hdfcbank,36SJWJA6409V1Z3,2025-04-20,EMP22,Bank letter + callback
+SUP033,"Yohannan, Sule and Shroff",Bank of Baroda,95339421047,BARB0095214,yohannansule@barodampay,36XNFGE8588I1ZA,2025-04-09,EMP22,Bank letter + callback
+SUP034,Pant LLC,Canara Bank,171236851604,CNRB0817549,panttrading@cnrb,09ULDVH7098K1ZE,2025-04-21,EMP02,Onboarding visit
+SUP035,Ravel Ltd,Bank of Baroda,461200471138,BARB0267586,raveltrading@barodampay,07NUDPT6405G1ZS,2025-04-15,EMP10,Bank letter + callback
+SUP036,Dar-Wason,HDFC Bank,58506431713900,HDFC0532931,darwason@hdfcbank,33SGHKY2904E1Z8,2025-04-18,EMP12,Cancelled cheque + callback
+SUP037,"Walla, Date and Mahal",HDFC Bank,02053950240268,HDFC0117758,walladate@hdfcbank,27OQHTB8470B1ZU,2025-04-13,EMP18,Onboarding visit
+SUP038,Rattan Group,HDFC Bank,711592124998,HDFC0569847,rattantraders@hdfcbank,09DZWDU8367H1ZQ,2025-04-11,EMP22,Bank letter + callback
+SUP039,Sanghvi-Mody,Axis Bank,15654527111161,UTIB0528098,sanghvimody@axisbank,36VDNLV6049J1ZM,2025-04-04,EMP24,Cancelled cheque + callback
+SUP040,Kata LLC,ICICI Bank,73158514936899,ICIC0809402,katatrading@icici,24WYJKL0229V1ZP,2025-04-03,EMP08,Onboarding visit

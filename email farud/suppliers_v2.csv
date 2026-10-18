@@ -1,0 +1,41 @@
+SupplierID,SupplierName,ContactPerson,ContactEmail,Phone,PrimaryCategory,ReliabilityScore,SupplierDomain,AccountsEmail
+SUP001,"Maharaj, Bakshi and Choudhury",Udant Dewan,udant.dewan@maharajbakshi.in,911338908386,Packaged Foods,3,maharajbakshi.in,accounts@maharajbakshi.in
+SUP002,Sen PLC,Abeer Dutta,abeer.dutta@sentrading.in,915116155940,Men's Apparel,6,sentrading.in,accounts@sentrading.in
+SUP003,"Sharaf, Yadav and Dash",Farhan Memon,farhan.memon@sharafyadav.in,914131647525,Small Electronics,5,sharafyadav.in,accounts@sharafyadav.in
+SUP004,Kadakia-Loke,Onveer Walla,onveer.walla@kadakialoke.in,8350305641,Packaged Foods,4,kadakialoke.in,accounts@kadakialoke.in
+SUP005,Murty and Sons,Meghana Shanker,meghana.shanker@murtysupply.in,8849696532,Cookware & Pots,3,murtysupply.in,accounts@murtysupply.in
+SUP006,"Tak, Chand and Batta",Michael Dutta,michael.dutta@takchand.com,7848018451,Fresh Groceries,4,takchand.com,accounts@takchand.com
+SUP007,Saran-Dugar,Aarush Lall,aarush.lall@sarandugar.in,8932528809,Small Electronics,6,sarandugar.in,accounts@sarandugar.in
+SUP008,Suresh-Bahl,Janani Mohanty,janani.mohanty@sureshbahl.com,911718227824,Fresh Groceries,6,sureshbahl.com,accounts@sureshbahl.com
+SUP009,"Sampath, Kakar and Zacharia",Devika Rastogi,devika.rastogi@sampathkakar.co.in,913150983930,Cookware & Pots,6,sampathkakar.co.in,accounts@sampathkakar.co.in
+SUP010,Bhargava and Sons,Azad Narayanan,azad.narayanan@bhargavatrading.in,7382997376,Kitchen Gadgets,7,bhargavatrading.in,accounts@bhargavatrading.in
+SUP011,Chandra Inc,Irya Sampath,irya.sampath@chandratrading.in,1065133387,Fresh Groceries,5,chandratrading.in,accounts@chandratrading.in
+SUP012,Sami and Sons,Turvi Krish,turvi.krish@samisupply.com,8013267736,Cookware & Pots,8,samisupply.com,accounts@samisupply.com
+SUP013,Gala Group,Madhavi Lanka,madhavi.lanka@galatrading.com,8723430980,Men's Apparel,5,galatrading.com,accounts@galatrading.com
+SUP014,"Murthy, Bhandari and Bedi",Yadavi Wali,yadavi.wali@murthybhandari.in,911913619399,Small Electronics,8,murthybhandari.in,accounts@murthybhandari.in
+SUP015,Bumb Group,Advika Jayaraman,advika.jayaraman@bumbenterprises.in,4751079911,Packaged Foods,4,bumbenterprises.in,accounts@bumbenterprises.in
+SUP016,"Kala, Toor and Lanka",Ikshita Biswas,ikshita.biswas@kalatoor.co.in,8498084124,Cookware & Pots,4,kalatoor.co.in,accounts@kalatoor.co.in
+SUP017,Chhabra Ltd,Anita Manda,anita.manda@chhabratraders.in,4874016400,Women's Apparel,8,chhabratraders.in,accounts@chhabratraders.in
+SUP018,De-Lala,Riya Sane,riya.sane@delala.in,918059826204,Men's Apparel,3,delala.in,accounts@delala.in
+SUP019,Baral-Parmar,Zaid Chauhan,zaid.chauhan@baralparmar.co.in,912602563421,Kitchen Gadgets,4,baralparmar.co.in,accounts@baralparmar.co.in
+SUP020,Barad-Singhal,Ryan Sharma,ryan.sharma@baradsinghal.in,3654145868,Cookware & Pots,4,baradsinghal.in,accounts@baradsinghal.in
+SUP021,Bala-D’Alia,Pranav Lanka,pranav.lanka@balad.in,5698169340,Men's Apparel,8,balad.in,accounts@balad.in
+SUP022,"Sarin, Agarwal and Venkatesh",Januja Sankar,januja.sankar@sarinagarwal.in,914846564823,Small Electronics,4,sarinagarwal.in,accounts@sarinagarwal.in
+SUP023,Raghavan-Ghosh,Nidra Acharya,nidra.acharya@raghavanghosh.in,5777387214,Fresh Groceries,6,raghavanghosh.in,accounts@raghavanghosh.in
+SUP024,"Nayak, Chander and Keer",Umang Issac,umang.issac@nayakchander.in,9176936763,Men's Apparel,4,nayakchander.in,accounts@nayakchander.in
+SUP025,Ahluwalia Inc,Theodore Goda,theodore.goda@ahluwaliatrading.in,917278895798,Small Electronics,4,ahluwaliatrading.in,accounts@ahluwaliatrading.in
+SUP026,Sehgal-Dutt,Shivani Lad,shivani.lad@sehgaldutt.co.in,3471434558,Cookware & Pots,7,sehgaldutt.co.in,accounts@sehgaldutt.co.in
+SUP027,Devi and Sons,Leela Dua,leela.dua@devitrading.in,8760366909,Kitchen Gadgets,8,devitrading.in,accounts@devitrading.in
+SUP028,Sood-Ahuja,Chanchal Ramakrishnan,chanchal.ramakrishnan@soodahuja.in,9373467065,Large Appliances,8,soodahuja.in,accounts@soodahuja.in
+SUP029,"Ravel, Gandhi and Sibal",Avi Ramesh,avi.ramesh@ravelgandhi.com,2046537556,Women's Apparel,6,ravelgandhi.com,accounts@ravelgandhi.com
+SUP030,Sama-Krishnan,Upma Bahl,upma.bahl@samakrishnan.in,910033092327,Men's Apparel,4,samakrishnan.in,accounts@samakrishnan.in
+SUP031,"Contractor, Kamdar and Shroff",Jyoti Ganesh,jyoti.ganesh@contractorkamdar.in,496631931,Large Appliances,6,contractorkamdar.in,accounts@contractorkamdar.in
+SUP032,"Mitra, Dara and Barman",Priya Prabhakar,priya.prabhakar@mitradara.co.in,7165726284,Large Appliances,10,mitradara.co.in,accounts@mitradara.co.in
+SUP033,"Yohannan, Sule and Shroff",Amrita Naidu,amrita.naidu@yohannansule.com,917996507527,Cookware & Pots,7,yohannansule.com,accounts@yohannansule.com
+SUP034,Pant LLC,Ati Majumdar,ati.majumdar@panttrading.co.in,916783777014,Small Electronics,8,panttrading.co.in,accounts@panttrading.co.in
+SUP035,Ravel Ltd,Damini Pillay,damini.pillay@raveltrading.com,8557444313,Fresh Groceries,6,raveltrading.com,accounts@raveltrading.com
+SUP036,Dar-Wason,Rehaan Kalita,rehaan.kalita@darwason.in,9413435240,Fresh Groceries,8,darwason.in,accounts@darwason.in
+SUP037,"Walla, Date and Mahal",Chatura Master,chatura.master@walladate.com,4777520471,Cookware & Pots,7,walladate.com,accounts@walladate.com
+SUP038,Rattan Group,Chatresh Doshi,chatresh.doshi@rattantraders.com,918699938677,Packaged Foods,6,rattantraders.com,accounts@rattantraders.com
+SUP039,Sanghvi-Mody,Hardik Johal,hardik.johal@sanghvimody.in,912812067974,Women's Apparel,6,sanghvimody.in,accounts@sanghvimody.in
+SUP040,Kata LLC,Sudiksha Bobal,sudiksha.bobal@katatrading.in,918324210249,Kitchen Gadgets,9,katatrading.in,accounts@katatrading.in

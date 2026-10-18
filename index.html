@@ -11,16 +11,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="splash.css">
 </head>
 <body>
+    <!-- SPLASH SCREEN -->
+    <div class="pl-overlay" id="pl-overlay">
+      <div class="pl-stage">
+        <div class="pl-flyer">
+          <div class="pl-logo" id="pl-logo" style="--pl-logo: url('logo.png')">
+            <div class="pl-logo__face"></div>
+            <div class="pl-logo__face pl-logo__face--r"></div>
+            <div class="pl-logo__face pl-logo__face--c"></div>
+            <div class="pl-logo__iris"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
     <div class="app-layout">
         <!-- Sidebar Navigation -->
         <aside class="sidebar">
             <div class="sidebar-header" style="display:flex; align-items:center; justify-content:space-between; width:100%;">
                 <div class="logo">
-                    <div class="logo-icon">
-                        <i class="fas fa-chart-line"></i>
+                    <div class="logo-icon" style="background: transparent;">
+                        <img src="logo.png" alt="SME Growth Advisor" style="width: 100%; height: 100%; object-fit: contain;">
                     </div>
                     <div class="logo-text">
                         <span class="logo-title">SME</span>
@@ -110,11 +125,11 @@
                     </div>
                 </a>
                 <a href="#" class="nav-item" data-target="reports">
-                    <i class="fas fa-file-alt"></i>
-                    <span>Reports</span>
+                    <i class="fas fa-shield-halved"></i>
+                    <span>Fraud Guard</span>
                     <div class="nav-info-wrapper">
                         <i class="far fa-circle-question info-icon"></i>
-                        <div class="custom-tooltip">View and download detailed reports.</div>
+                        <div class="custom-tooltip">Automated scam detection and honeypot.</div>
                     </div>
                 </a>
                 <a href="#" class="nav-item" data-target="alerts">
@@ -507,32 +522,17 @@
                             <div class="bot-status-indicator">
                                 <div class="bot-avatar-circle">🤖</div>
                                 <div>
-                                    <h4>AI Business Advisor (Gemma)</h4>
+                                    <h4>AI Business Advisor (DronaHQ)</h4>
                                     <p class="status-online"><span class="dot"></span> Online</p>
                                 </div>
                             </div>
-                            <button id="btnVoiceAgent" onclick="toggleVoiceAgent()" style="background: linear-gradient(135deg, #6366f1, #8b5cf6); border: none; color: white; padding: 8px 16px; border-radius: 8px; cursor: pointer; font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 6px; transition: all 0.3s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
-                                <i class="fas fa-microphone"></i> Voice Agent
+                            <button id="btnVoiceAgent" onclick="toggleVoiceAgent()" style="background: linear-gradient(135deg, #10b981, #059669); border: none; color: white; padding: 8px 16px; border-radius: 8px; cursor: pointer; font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 6px; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(16,185,129,0.3);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                                <i class="fas fa-phone-alt"></i> Voice Agent (Sarvam)
                             </button>
-                        </div>
-
-                        <!-- Voice Agent Modal Overlay -->
-                        <div id="voiceAgentModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); backdrop-filter:blur(8px); z-index:9999; justify-content:center; align-items:center;">
-                            <div style="background:#1e1e2e; border-radius:20px; padding:30px; width:420px; max-width:90vw; text-align:center; position:relative; box-shadow:0 20px 60px rgba(0,0,0,0.5); border:1px solid rgba(255,255,255,0.1);">
-                                <button onclick="toggleVoiceAgent()" style="position:absolute; top:12px; right:16px; background:none; border:none; color:#94a3b8; font-size:22px; cursor:pointer;">&times;</button>
-                                <div style="margin-bottom:15px;">
-                                    <div style="width:60px; height:60px; background:linear-gradient(135deg,#6366f1,#8b5cf6); border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 10px; font-size:28px;">🎙️</div>
-                                    <h3 style="color:#f1f5f9; margin:0 0 5px;">Gemma Voice Assistant</h3>
-                                    <p style="color:#94a3b8; font-size:13px; margin:0;">Tap the mic and ask anything about your business</p>
-                                </div>
-                                <div id="voiceWidgetContainer">
-                                    <elevenlabs-convai agent-id="agent_5701m3hae9zwezxt59fmvz2yxy4e" branch-id="agtbrch_6801m3haeb81f8v912a6xd3vq90v"></elevenlabs-convai>
-                                </div>
-                            </div>
                         </div>
                         <div class="full-chat-history" id="fullChatHistory">
                             <div class="full-chat-msg bot">
-                                <p>Hi Arjun! I'm your AI Business Advisor. Ask me anything about pricing, sales, inventory or cash flow forecasting.</p>
+                                <p>Hi Arjun! I'm your AI Business Advisor powered by DronaHQ. Ask me anything about pricing, sales, inventory or cash flow forecasting.</p>
                             </div>
                         </div>
                         <div class="full-chat-input-row">
@@ -757,54 +757,120 @@
                 </div>
 
                 <!-- 9. REPORTS VIEW -->
+                <!-- FRAUD GUARD (REPLACES REPORTS) -->
                 <div class="page-view" id="reports">
-                    <div class="reports-header-card">
-                        <h3>Reports Library</h3>
-                        <p>Generate, download or schedule operational reports in PDF or Excel format.</p>
+                    <div style="background:#13151a; color:#cbd5e1; font-family:'Inter', sans-serif; min-height:85vh; display:flex; flex-direction:column; padding:20px;">
+                    <div style="display:flex; flex:1; gap:20px;">
+                        <!-- LEFT COLUMN: METADATA & IOCS -->
+                        <div style="width:320px; display:flex; flex-direction:column; gap:20px;">
+                            
+                            <!-- SESSION METADATA -->
+                            <div style="background:#1b1d24; border:1px solid #2d3039; border-radius:8px; padding:16px;">
+                                <h4 style="font-size:0.75rem; color:#6b7280; font-weight:700; margin:0 0 16px 0; text-transform:uppercase;">Session Metadata</h4>
+                                
+                                <div style="margin-bottom:12px;">
+                                    <span style="font-size:0.65rem; color:#3b82f6; text-transform:uppercase; font-weight:600; display:block;">Mailbox</span>
+                                    <span id="fg-mailbox" style="font-size:0.85rem; color:#f3f4f6;">--</span>
+                                </div>
+                                <div style="margin-bottom:12px;">
+                                    <span style="font-size:0.65rem; color:#3b82f6; text-transform:uppercase; font-weight:600; display:block;">Scam Type</span>
+                                    <span id="fg-scam-type" style="background:rgba(220, 38, 38, 0.15); color:#ef4444; font-size:0.75rem; padding:2px 6px; border-radius:4px; font-weight:600; display:inline-block; margin-top:4px;">--</span>
+                                </div>
+                                <div style="margin-bottom:12px;">
+                                    <span style="font-size:0.65rem; color:#3b82f6; text-transform:uppercase; font-weight:600; display:block;">Persona</span>
+                                    <span id="fg-persona" style="font-size:0.85rem; color:#f3f4f6;">--</span>
+                                </div>
+                                <div style="margin-bottom:16px;">
+                                    <span style="font-size:0.65rem; color:#3b82f6; text-transform:uppercase; font-weight:600; display:block;">Started</span>
+                                    <span id="fg-started" style="font-size:0.85rem; color:#f3f4f6;">--</span>
+                                </div>
+                                
+                                <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; border-top:1px solid #2d3039; padding-top:12px;">
+                                    <div>
+                                        <span style="font-size:0.6rem; color:#3b82f6; text-transform:uppercase; font-weight:600; display:block;">Duration</span>
+                                        <span id="fg-duration" style="font-size:0.85rem; color:#f3f4f6; font-weight:600;">--</span>
+                                    </div>
+                                    <div>
+                                        <span style="font-size:0.6rem; color:#3b82f6; text-transform:uppercase; font-weight:600; display:block;">Total Messages</span>
+                                        <span id="fg-total-messages" style="font-size:0.85rem; color:#f3f4f6; font-weight:600;">--</span>
+                                    </div>
+                                    <div>
+                                        <span style="font-size:0.6rem; color:#3b82f6; text-transform:uppercase; font-weight:600; display:block;">Actionable IOCs <i class="far fa-circle-question" style="font-size:0.55rem; color:#6b7280;"></i></span>
+                                        <span id="fg-ioc-count" style="font-size:0.85rem; color:#f3f4f6; font-weight:600;">6</span>
+                                    </div>
+                                    <div>
+                                        <span style="font-size:0.6rem; color:#3b82f6; text-transform:uppercase; font-weight:600; display:block;">Risk Score</span>
+                                        <span id="fg-risk-score" style="font-size:0.85rem; color:#f3f4f6; font-weight:600;">100</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- EXTRACTED IOCS -->
+                            <div style="background:#1b1d24; border:1px solid #2d3039; border-radius:8px; padding:16px; flex:1; display:flex; flex-direction:column; overflow:hidden;">
+                                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+                                    <h4 style="font-size:0.75rem; color:#6b7280; font-weight:700; margin:0; text-transform:uppercase;">Extracted IOCs (<span id="fg-ioc-count2">6</span>)</h4>
+                                    <button style="background:none; border:none; color:#3b82f6; font-size:0.7rem; font-weight:600; cursor:pointer;"><i class="fas fa-download"></i> STIX 2.1</button>
+                                </div>
+                                
+                                <div id="fg-iocs-list" style="display:flex; flex-direction:column; gap:8px; overflow-y:auto; padding-right:5px;">
+                                    <!-- IOC items injected via JS -->
+                                    <div style="text-align:center; padding:20px; color:#6b7280; font-size:0.8rem;">
+                                        Click 'Run Simulation' to scan.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- RIGHT COLUMN: EMAIL THREAD -->
+                        <div style="flex:1; background:#1b1d24; border:1px solid #2d3039; border-radius:8px; display:flex; flex-direction:column; overflow:hidden;">
+                            <!-- Header -->
+                            <div style="padding:16px 20px; border-bottom:1px solid #2d3039; display:flex; align-items:center; gap:8px;">
+                                <i class="far fa-envelope" style="color:#94a3b8; font-size:1.1rem;"></i>
+                                <h3 style="margin:0; font-size:1rem; font-weight:600; color:#f3f4f6;">Email Thread — <span style="font-weight:700;">Automated</span> <span style="font-size:0.75rem; font-weight:400; color:#6b7280;">via IMAP honeypot</span></h3>
+                                <div style="flex:1;"></div>
+                                <button onclick="fetchNewSuspiciousEmail()" id="btnFetchEmail" style="background:#4b5563; border:none; color:white; padding:6px 12px; border-radius:6px; font-size:0.75rem; font-weight:600; cursor:pointer; margin-right:8px;"><i class="fas fa-random"></i> Load Real Scam Data</button>
+                                <button onclick="loadFraudSimulation()" id="btnFraudSimulate" style="background:#3b82f6; border:none; color:white; padding:6px 12px; border-radius:6px; font-size:0.75rem; font-weight:600; cursor:pointer;"><i class="fas fa-play"></i> Run Simulation</button>
+                            </div>
+                            
+                            <!-- Thread Content -->
+                            <div style="padding:20px; flex:1; overflow-y:auto; background:#13151a; display:flex; flex-direction:column; gap:20px;">
+                                
+                                <!-- Scammer Email -->
+                                <div style="background:#262933; border-radius:8px; padding:16px; max-width:85%;">
+                                    <span style="font-size:0.6rem; color:#ef4444; text-transform:uppercase; font-weight:700; letter-spacing:1px; display:block; margin-bottom:8px;">Scammer</span>
+                                    <div id="fg-scammer-body" style="font-size:0.9rem; color:#d1d5db; line-height:1.5;">
+                                        Urgent: Updated Banking Details for Invoice INV-2026-88402<br><br>
+                                        Dear Mr. Harrison,<br><br>
+                                        I hope this message finds you well. I'm writing regarding outstanding invoice INV-2026-88402 issued on 12 March 2026 for consulting services rendered in Q1 (£28,450.00). Our accounts department has flagged the payment as overdue, and our bank has requested that we update the remittance instructions on file.<br><br>
+                                        Effective immediately, all payments should be routed to our new compliance account:<br><br>
+                                        Account name: Meridian Partners LLC<br>
+                                        IBAN: GB82 WEST 1234 5698 7654 32<br>
+                                        BIC: NWBK...<br>
+                                        <a href="#" style="color:#3b82f6; text-decoration:none; font-size:0.8rem; margin-top:8px; display:inline-block;">Show full message</a>
+                                    </div>
+                                    <div style="font-size:0.65rem; color:#6b7280; margin-top:12px;">19:52</div>
+                                </div>
+                                
+                                <!-- Sentinel Reply -->
+                                <div style="background:#0f292c; border:1px solid #134e4a; border-radius:8px; padding:16px; max-width:85%; align-self:flex-end;">
+                                    <span style="font-size:0.6rem; color:#14b8a6; text-transform:uppercase; font-weight:700; letter-spacing:1px; display:block; margin-bottom:8px;">NVIDIA Fraud AI</span>
+                                    <div id="fg-sentinel-body" style="font-size:0.9rem; color:#d1d5db; line-height:1.5;">
+                                        <div style="color:#6b7280; font-style:italic;">Awaiting analysis...</div>
+                                    </div>
+                                    <div id="fg-action-buttons" style="margin-top:12px; display:none;">
+                                        <button onclick="sendGeneratedEmail()" style="background:#14b8a6; color:#0f292c; border:none; padding:6px 12px; border-radius:4px; font-size:0.75rem; font-weight:700; cursor:pointer;"><i class="fas fa-paper-plane" style="margin-right:4px;"></i> Send Reply via Email</button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                            <!-- Footer -->
+                            <div style="padding:12px 20px; border-top:1px solid #2d3039; display:flex; justify-content:space-between; align-items:center; background:#1b1d24;">
+                                <span style="font-size:0.75rem; color:#6b7280; font-style:italic;">Automated — agent controls this conversation</span>
+                                <i class="fas fa-lock" style="color:#4b5563; font-size:0.8rem;"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="reports-list-grid">
-                        <div class="report-box-item">
-                            <div class="report-icon"><i class="fas fa-file-invoice text-purple"></i></div>
-                            <div class="report-meta">
-                                <h4>Sales Report</h4>
-                                <button class="btn-view-report-file">View Report</button>
-                            </div>
-                        </div>
-                        <div class="report-box-item">
-                            <div class="report-icon"><i class="fas fa-chart-line text-green"></i></div>
-                            <div class="report-meta">
-                                <h4>Profit & Loss</h4>
-                                <button class="btn-view-report-file">View Report</button>
-                            </div>
-                        </div>
-                        <div class="report-box-item">
-                            <div class="report-icon"><i class="fas fa-boxes-stacked text-orange"></i></div>
-                            <div class="report-meta">
-                                <h4>Inventory Report</h4>
-                                <button class="btn-view-report-file">View Report</button>
-                            </div>
-                        </div>
-                        <div class="report-box-item">
-                            <div class="report-icon"><i class="fas fa-money-bill-transfer text-cyan"></i></div>
-                            <div class="report-meta">
-                                <h4>Cash Flow Report</h4>
-                                <button class="btn-view-report-file">View Report</button>
-                            </div>
-                        </div>
-                        <div class="report-box-item">
-                            <div class="report-icon"><i class="fas fa-users text-yellow"></i></div>
-                            <div class="report-meta">
-                                <h4>Customer Report</h4>
-                                <button class="btn-view-report-file">View Report</button>
-                            </div>
-                        </div>
-                        <div class="report-box-item">
-                            <div class="report-icon"><i class="fas fa-shield text-red"></i></div>
-                            <div class="report-meta">
-                                <h4>Tax Report</h4>
-                                <button class="btn-view-report-file">View Report</button>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
@@ -1049,21 +1115,43 @@
         </div>
     </div>
 
-    <script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
     <script>
         function toggleVoiceAgent() {
-            const modal = document.getElementById('voiceAgentModal');
-            if (modal.style.display === 'none' || modal.style.display === '') {
-                modal.style.display = 'flex';
-            } else {
-                modal.style.display = 'none';
-            }
-        }
+            const sarvamWidget = document.querySelector('sarvam-widget');
+            if (!sarvamWidget) return;
+            const shadow = sarvamWidget.shadowRoot;
+            if (!shadow) return;
 
-        document.getElementById('voiceAgentModal')?.addEventListener('click', function(e) { 
-            if (e.target === this) toggleVoiceAgent(); 
-        });
+            const allButtons = shadow.querySelectorAll('button');
+            if (allButtons.length === 1) {
+                // Collapsed floating button: click to expand
+                allButtons[0].click();
+                // Click call button when expanded
+                setTimeout(() => {
+                    const btns = shadow.querySelectorAll('button');
+                    const callBtn = Array.from(btns).find(b => b.textContent?.includes('Talk') || b.textContent?.includes('Call') || b.style.borderRadius === '9999px') || btns[1];
+                    if (callBtn) callBtn.click();
+                }, 350);
+            } else if (allButtons.length > 1) {
+                // Already expanded: start call
+                const callBtn = Array.from(allButtons).find(b => b.textContent?.includes('Talk') || b.textContent?.includes('Call') || b.style.borderRadius === '9999px') || allButtons[allButtons.length - 1];
+                if (callBtn) callBtn.click();
+            }
+            sarvamWidget.scrollIntoView({ behavior: 'smooth', block: 'end' });
+        }
     </script>
     <script src="app.js"></script>
+
+    <!-- Sarvam Voice Agent Widget (Level 1: HTML embed behind server proxy) -->
+    <script src="https://unpkg.com/sarvam-convai-embed"></script>
+    <sarvam-widget
+      session-endpoint="/api/sarvam/"
+      app-id="SMEVoice-c90bb94f-f6b0"
+      org-id="01a14d56-1aae-75ab-9c55-dee5bb3b9e43"
+      workspace-id="01a14d56-1ab5-736b-83a6-2df9491849bc"
+      user-id="website_visitor"
+      button-text="Talk to Shubh"
+      interaction-type="call"
+    ></sarvam-widget>
 </body>
 </html>
