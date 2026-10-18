@@ -1903,11 +1903,11 @@ function openPricingAdvisorModal() {
           </div>
         </div>
 
-        <!-- GEMMA ANALYSIS -->
+        <!-- NVIDIA NIM ANALYSIS -->
         <div>
-          <p style="margin:0 0 10px 0; font-size:0.8rem; color:#64748b; font-weight:700; text-transform:uppercase; letter-spacing:0.5px;">GEMMA ANALYSIS</p>
+          <p style="margin:0 0 10px 0; font-size:0.8rem; color:#64748b; font-weight:700; text-transform:uppercase; letter-spacing:0.5px;">NVIDIA NIM ANALYSIS</p>
           <div style="background:rgba(99,102,241,0.1); border-left:4px solid #6366f1; padding:16px; border-radius:0 8px 8px 0; border:1px solid rgba(99,102,241,0.2);">
-            <p style="margin:0; font-size:0.9rem; color:#e2e8f0; line-height:1.5;">${p.gemma || 'Based on demand trend, competitor pricing, and low price sensitivity, increasing price by 5-7% can increase monthly profit by ₹18.6L - ₹24.4L, without affecting volume significantly.'}</p>
+            <p style="margin:0; font-size:0.9rem; color:#e2e8f0; line-height:1.5;">${p.gemma || p.desc || 'AI-driven pricing strategy generated based on demand elasticity and gross margin analysis.'}</p>
           </div>
         </div>
 
@@ -1929,7 +1929,7 @@ function openPricingAdvisorModal() {
   const askBtn = $('btnAskAIPricing');
   const askInput = $('aiPricingSearchInput');
   if (askBtn && askInput) {
-    askBtn.onclick = async () => {
+    const triggerSearch = async () => {
       const q = askInput.value.trim();
       if (!q) return;
       
@@ -1951,48 +1951,26 @@ function openPricingAdvisorModal() {
           selectedIdx = 0;
           renderPricingDetails();
           askInput.value = '';
-          askBtn.innerHTML = originalText;
-          askBtn.disabled = false;
-          askInput.disabled = false;
           return;
+        } else {
+          showToast('error', 'Pricing Advisor', 'Unable to fetch pricing for this product.');
         }
       } catch (e) {
-        console.log('Pricing API unreachable, generating client-side advice...');
+        console.log('Pricing API error:', e);
+        showToast('error', 'Pricing Advisor', 'Network timeout while analyzing product.');
+      } finally {
+        askBtn.innerHTML = originalText;
+        askBtn.disabled = false;
+        askInput.disabled = false;
       }
+    };
 
-      // Client-side pricing generation
-      const simulatedAdvice = {
-        id: 'CUSTOM-AI',
-        name: q.charAt(0).toUpperCase() + q.slice(1),
-        badge: 'Increase 5-7%',
-        badgeColor: '#10b981',
-        desc: `AI-driven pricing strategy based on demand elasticity analysis for ${q}.`,
-        insights: {
-          currentPrice: '₹1,250',
-          costPrice: '₹850',
-          currentMargin: '32.0%',
-          compPrice: '₹1,320',
-          sales: '1,248 units',
-          growth: '+22.4%',
-          elasticity: 'Low (0.32)',
-          trend: 'Increasing'
-        },
-        gemma: `Based on demand trend, competitor pricing, and low price sensitivity, increasing price by 5-7% on ${q} will increase monthly profit without affecting volume significantly.`,
-        impacts: [
-          { label: 'Price Increase', val: '5-7%', color: '#6366f1' },
-          { label: 'Profit Increase', val: '₹18.6L - ₹24.4L', color: '#10b981' },
-          { label: 'Margin Increase', val: '+3.2%', color: '#3b82f6' },
-          { label: 'Revenue Impact', val: 'Minimal', color: '#64748b' }
-        ]
-      };
-      products.unshift(simulatedAdvice);
-      selectedIdx = 0;
-      renderPricingDetails();
-      askInput.value = '';
-      
-      askBtn.innerHTML = originalText;
-      askBtn.disabled = false;
-      askInput.disabled = false;
+    askBtn.onclick = triggerSearch;
+    askInput.onkeydown = (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        triggerSearch();
+      }
     };
   }
 }
